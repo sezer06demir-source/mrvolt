@@ -51,11 +51,11 @@ export const districts: District[] = [
     intro:
       "Yenikent'teki dairelerde en çok konuştuğumuz konulardan biri kaçak akım rölesi, yani panodaki o test butonlu şalter. Çoğu kişi onun ne işe yaradığını bilmeden yaşıyor, oysa o küçük parça bir hayatı kurtarabilecek en önemli koruma.",
     paragraphs: [
-      "Kaçak akım rölesi, giden ve dönen akım arasındaki en ufak dengesizliği yakalar; yani elektrik toprağa ya da bir insana kaçmaya başladığı anda milisaniyeler içinde hattı keser. Ev tipi rölelerde bu eşik 30 miliamperdir ve bu değer tesadüf değil, insan için tehlikeli sınırın altında tutulmak için seçilmiştir. Vural tarafındaki dairelerde ilk yaptığımız iş çoğu zaman bu rölenin gerçekten devrede olup olmadığını kontrol etmek oluyor.",
-      "Rölenin üstünde 'T' ya da 'Test' yazan bir buton vardır ve bunu ayda bir elinizle basıp denemek gerekir; bastığınızda elektrik kesiliyorsa röle sağlıklıdır, kesmiyorsa o koruma aslında yok demektir. Andiçen'deki bir işte röle takılıydı ama içi arızalanmıştı, test butonu tepki vermiyordu; dışarıdan bakınca her şey yolunda görünse de aslında ev korumasızdı.",
-      "Bazen de röle sebepsiz gibi görünen anlarda atar ve insanlar bundan bıkıp iptal ettirmek ister; bu çok yanlış olur. Turhan Feyzioğlu ve Tandoğan taraflarında böyle çağrılara gidip genelde nemlenmiş bir hat, dış mekâna kaçak yapan bir priz ya da eskimiş bir cihaz buluyoruz. Röleyi susturmak yerine onu attıran gerçek kaçağı bulmak doğru olan.",
+      "Kaçak akım rölesi, giden ve dönen akım arasındaki en ufak dengesizliği yakalar; yani elektrik toprağa ya da bir insana kaçmaya başladığı anda milisaniyeler içinde hattı keser. Ev tipi rölelerde bu eşik 30 miliamperdir ve bu değer tesadüf değil, insan için tehlikeli sınırın altında tutulmak için seçilmiştir. 29 Ekim tarafındaki dairelerde ilk yaptığımız iş çoğu zaman bu rölenin gerçekten devrede olup olmadığını kontrol etmek oluyor.",
+      "Rölenin üstünde 'T' ya da 'Test' yazan bir buton vardır ve bunu ayda bir elinizle basıp denemek gerekir; bastığınızda elektrik kesiliyorsa röle sağlıklıdır, kesmiyorsa o koruma aslında yok demektir. Fevziçakmak'taki bir işte röle takılıydı ama içi arızalanmıştı, test butonu tepki vermiyordu; dışarıdan bakınca her şey yolunda görünse de aslında ev korumasızdı.",
+      "Bazen de röle sebepsiz gibi görünen anlarda atar ve insanlar bundan bıkıp iptal ettirmek ister; bu çok yanlış olur. Menderes ve Mustafa Kemal taraflarında böyle çağrılara gidip genelde nemlenmiş bir hat, dış mekâna kaçak yapan bir priz ya da eskimiş bir cihaz buluyoruz. Röleyi susturmak yerine onu attıran gerçek kaçağı bulmak doğru olan.",
     ],
-    neighborhoods: ["Yenikent", "Turhan Feyzioğlu", "Vural", "Andiçen", "Tandoğan"],
+    neighborhoods: ["29 Ekim", "Fevziçakmak", "Menderes", "Mustafa Kemal", "Melih Gökçek Bulvarı"],
     faq: [
       {
         q: "Yenikent'te kaçak akım rölesinin çalıştığını nasıl anlarım?",
