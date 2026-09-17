@@ -1,0 +1,228 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import Icon from '@components/Icon.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import DistrictCard from '@components/DistrictCard.astro';
+import CTASection from '@components/CTASection.astro';
+import { site } from '@data/site';
+import { districts, getDistrict } from '@data/districts';
+import { services } from '@data/services';
+
+export function getStaticPaths() {
+  return districts.map((d) => ({ params: { slug: d.slug } }));
+}
+
+const { slug } = Astro.params;
+const d = getDistrict(slug!)!;
+const nearby = districts.filter((x) => x.slug !== d.slug).slice(0, 4);
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<BaseLayout title={d.seoTitle} description={d.seoDescription} path={`/hizmet-bolgeleri/${d.slug}`} schemas={[faqSchema]}>
+  <PageHero
+    eyebrow={`${d.name} · Ankara`}
+    title={`${d.name} Elektrikçi`}
+    subtitle={d.intro}
+    crumbs={[{ label: 'Hizmet bölgeleri', href: '/hizmet-bolgeleri' }, { label: d.name }]}
+    showCta
+  />
+
+  <section class="section">
+    <div class="container detail">
+      <div class="detail__main">
+        <div class="prose reveal">
+          {d.paragraphs.map((p) => <p>{p}</p>)}
+        </div>
+
+        <div class="reveal">
+          <h2>{d.name} mahalleleri</h2>
+          <p class="muted">{d.locative} şu bölgelere ve çevresine gidiyoruz:</p>
+          <div class="hoods">
+            {d.neighborhoods.map((n) => <span class="hood"><Icon name="map-pin" size={14} /> {n}</span>)}
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2>{d.name}’de verdiğimiz hizmetler</h2>
+          <div class="svc-list">
+            {
+              services.map((s) => (
+                <a href={`/hizmetler/${s.slug}`} class="svc-line">
+                  <span class="svc-line__ic"><Icon name={s.icon} size={18} /></span>
+                  <span>{s.title}</span>
+                  <Icon name="chevron-right" size={16} class="svc-line__go" />
+                </a>
+              ))
+            }
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h2>{d.name} için sık sorulanlar</h2>
+          <FAQAccordion items={d.faq} />
+        </div>
+      </div>
+
+      <aside class="detail__aside">
+        <div class="callbox reveal">
+          <span class="callbox__eyebrow"><Icon name="spark" size={16} /> {d.name} elektrikçi</span>
+          <p class="callbox__text">{d.locative} elektrik arızası mı var? Arayın, durumu birlikte değerlendirip en kısa sürede yanınızda olalım.</p>
+          <a href={site.phone.href} class="btn btn--spark btn--block btn--lg"><Icon name="phone" size={20} /> {site.phone.display}</a>
+          <a href={site.whatsapp.href} class="btn btn--ghost btn--block" target="_blank" rel="noopener"><Icon name="whatsapp" size={18} /> WhatsApp’tan yaz</a>
+          <p class="callbox__hours"><Icon name="clock" size={15} /> {site.hours.daysText} · {site.hours.display}</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--tight" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Yakın bölgeler</p>
+        <h2>Çevre ilçelerde de hizmet veriyoruz</h2>
+      </div>
+      <div class="nearby">
+        {nearby.map((n) => <DistrictCard name={`${n.name} Elektrikçi`} slug={n.slug} />)}
+      </div>
+    </div>
+  </section>
+
+  <CTASection title={`${d.name}’de elektrik arızası mı var?`} />
+</BaseLayout>
+
+<style>
+  .detail {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .detail__main {
+    display: grid;
+    gap: 2.5rem;
+    min-width: 0;
+  }
+  .detail__main h2 {
+    font-size: var(--fs-lg);
+    margin-bottom: 1rem;
+  }
+  .prose p {
+    margin-bottom: 1.1rem;
+    color: var(--muted);
+    font-size: var(--fs-md);
+    max-width: 68ch;
+  }
+  .muted {
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+  .hoods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .hood {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.45rem 0.8rem;
+    background: var(--surface-2);
+    border-radius: 999px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--text);
+  }
+  .hood svg {
+    color: var(--volt);
+  }
+  .svc-list {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .svc-line {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    color: var(--text);
+    transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .svc-line:hover {
+    border-color: var(--volt);
+    transform: translateX(3px);
+  }
+  .svc-line__ic {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: color-mix(in srgb, var(--volt) 12%, white);
+    color: var(--volt);
+  }
+  .svc-line :global(.svc-line__go) {
+    color: var(--muted-2);
+  }
+  .callbox {
+    position: sticky;
+    top: 96px;
+    background: var(--ink);
+    color: var(--on-dark);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow);
+  }
+  .callbox__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--spark);
+    font-size: var(--fs-sm);
+  }
+  .callbox__text {
+    margin: 0.8rem 0 1.3rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+  .callbox .btn {
+    margin-bottom: 0.6rem;
+  }
+  .callbox__hours {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+    font-size: var(--fs-xs);
+    color: var(--on-dark-muted);
+  }
+  .nearby {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 560px) {
+    .nearby {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 960px) {
+    .detail {
+      grid-template-columns: 1fr 340px;
+      align-items: start;
+    }
+    .nearby {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>

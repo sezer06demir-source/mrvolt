@@ -1,0 +1,49 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import ServiceCard from '@components/ServiceCard.astro';
+import CTASection from '@components/CTASection.astro';
+import { services } from '@data/services';
+
+const title = 'Elektrik Hizmetlerimiz — Ankara Elektrikçi | Mr Volt';
+const description =
+  "Ankara'da elektrik arıza tespiti, sigorta-pano, kaçak akım rölesi, priz-anahtar, aydınlatma-avize, elektrik tesisatı ve iş yeri elektriği. Deneyimli ekip: 0506 254 76 78.";
+---
+
+<BaseLayout title={title} description={description} path="/hizmetler">
+  <PageHero
+    eyebrow="Hizmetler"
+    title="Elektrikle ilgili her iş, tek elden"
+    subtitle="Küçük bir priz arızasından komple tesisata kadar; işi ölçerek, güvenli ve düzenli yapıyoruz. Aşağıdan ihtiyacınıza en yakın başlığı seçin."
+    crumbs={[{ label: 'Hizmetler' }]}
+    showCta
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        {services.map((s) => <ServiceCard service={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

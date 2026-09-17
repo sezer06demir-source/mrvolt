@@ -1,0 +1,41 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import CTASection from '@components/CTASection.astro';
+import { faq } from '@data/faq';
+
+const title = 'Sık Sorulan Sorular — Mr Volt Ankara Elektrikçi';
+const description =
+  "Ankara elektrikçi hizmetlerimiz hakkında sık sorulan sorular: hangi ilçeler, ne kadar sürede geliriz, fiyat, çalışma saatleri ve daha fazlası. Mr Volt: 0506 254 76 78.";
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<BaseLayout title={title} description={description} path="/sss" schemas={[faqSchema]}>
+  <PageHero
+    eyebrow="Sık sorulanlar"
+    title="Aklınıza takılanlar"
+    subtitle="En çok merak edilen soruları topladık. Cevabını bulamazsanız çekinmeden arayın."
+    crumbs={[{ label: 'Sık sorulanlar' }]}
+    showCta
+  />
+
+  <section class="section">
+    <div class="container faq-wrap">
+      <FAQAccordion items={faq} />
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .faq-wrap {
+    max-width: var(--container-narrow);
+  }
+</style>

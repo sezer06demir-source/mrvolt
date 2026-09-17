@@ -1,0 +1,299 @@
+---
+import Icon from '@components/Icon.astro';
+import { site } from '@data/site';
+---
+
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true">
+    <span class="hero__glow"></span>
+    <span class="hero__grid"></span>
+  </div>
+
+  <div class="container hero__in">
+    <div class="hero__copy">
+      <p class="hero__eyebrow">
+        <span class="hero__dot"></span>
+        {site.tagline} · 28+ yıl tecrübe
+      </p>
+      <h1 class="hero__title">
+        Elektrik arızasına <span class="hero__title-accent">hızlı ve kesin</span> çözüm.
+      </h1>
+      <p class="hero__lead">
+        Sigorta atması, kaçak akım, ısınan priz, aydınlatma ve tesisat… Ankara’nın her ilçesine aynı gün
+        gidiyor, arızayı ölçerek buluyor ve fiyatı işe başlamadan söylüyoruz.
+      </p>
+
+      <div class="hero__cta">
+        <a href={site.phone.href} class="btn btn--spark btn--lg">
+          <Icon name="phone" size={20} /> {site.phone.display}
+        </a>
+        <a href={site.whatsapp.href} class="btn btn--ghost btn--lg" target="_blank" rel="noopener">
+          <Icon name="whatsapp" size={20} /> WhatsApp’tan yaz
+        </a>
+      </div>
+
+      <ul class="hero__trust">
+        <li><Icon name="clock" size={17} /> Aynı gün müdahale</li>
+        <li><Icon name="map-pin" size={17} /> Ankara’da 10 ilçe</li>
+        <li><Icon name="tag" size={17} /> Fiyatı önden net</li>
+      </ul>
+    </div>
+
+    <!-- imza görsel: akım animasyonlu volt paneli -->
+    <div class="hero__panel" aria-hidden="true">
+      <div class="voltcard">
+        <svg class="voltcard__circuit" viewBox="0 0 320 320" fill="none">
+          <path class="track" d="M20 60 H140 V150 H80 V250 H240 V120 H300" />
+          <path class="track" d="M20 120 H60 V300" />
+          <path class="track" d="M300 60 H200 V200" />
+          <path class="current c1" d="M20 60 H140 V150 H80 V250 H240 V120 H300" />
+          <path class="current c2" d="M300 60 H200 V200" />
+          <circle class="node" cx="140" cy="60" r="4" />
+          <circle class="node" cx="80" cy="250" r="4" />
+          <circle class="node" cx="240" cy="120" r="4" />
+          <circle class="node" cx="200" cy="200" r="4" />
+        </svg>
+        <div class="voltcard__bolt">
+          <svg viewBox="0 0 64 64" width="72" height="72">
+            <path d="M37.5 7 18 37.5a1.6 1.6 0 0 0 1.35 2.46H30l-3.1 17.2a1 1 0 0 0 1.83.73L47.9 27.3A1.6 1.6 0 0 0 46.55 24.8H35.7l4.2-16.1A1.35 1.35 0 0 0 37.5 7Z" fill="#ffd23f" />
+          </svg>
+        </div>
+        <div class="voltcard__readout">
+          <span class="voltcard__label">Şebeke</span>
+          <span class="voltcard__value">220<small>V</small></span>
+          <span class="voltcard__ok"><span></span> hat aktif</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    background: var(--ink);
+    color: var(--on-dark);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .hero__glow {
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    max-width: 780px;
+    max-height: 780px;
+    background: radial-gradient(circle, rgba(75, 59, 255, 0.55), rgba(75, 59, 255, 0) 62%);
+    filter: blur(10px);
+  }
+  .hero__grid {
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 54px 54px;
+    mask-image: radial-gradient(circle at 70% 20%, #000 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(circle at 70% 20%, #000 0%, transparent 70%);
+  }
+
+  .hero__in {
+    display: grid;
+    gap: clamp(2rem, 1rem + 4vw, 3.5rem);
+    align-items: center;
+    padding-block: clamp(3.2rem, 2rem + 7vw, 6.5rem);
+    grid-template-columns: 1fr;
+  }
+
+  .hero__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-sm);
+    color: var(--spark);
+    margin-bottom: 1.2rem;
+  }
+  .hero__dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--spark);
+    box-shadow: 0 0 0 0 rgba(255, 210, 63, 0.6);
+    animation: pulse 2.4s var(--ease) infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(255, 210, 63, 0.55); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 210, 63, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 210, 63, 0); }
+  }
+
+  .hero__title {
+    font-size: var(--fs-3xl);
+    color: #fff;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+  .hero__title-accent {
+    color: transparent;
+    background: linear-gradient(100deg, #ffe081, var(--spark) 55%, var(--spark-deep));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .hero__lead {
+    margin-top: 1.4rem;
+    max-width: 52ch;
+    font-size: var(--fs-md);
+    color: var(--on-dark-muted);
+  }
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+  .hero__trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.1rem 1.6rem;
+    margin-top: 2rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--on-dark-line);
+  }
+  .hero__trust li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--on-dark);
+  }
+  .hero__trust svg {
+    color: var(--spark);
+  }
+
+  /* --- volt paneli --- */
+  .hero__panel {
+    display: none;
+    justify-content: center;
+  }
+  .voltcard {
+    position: relative;
+    width: min(420px, 100%);
+    aspect-ratio: 1;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(160deg, #1a2350, #0d1330);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-lg), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+  }
+  .voltcard__circuit {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .voltcard__circuit .track {
+    stroke: rgba(255, 255, 255, 0.09);
+    stroke-width: 2;
+  }
+  .voltcard__circuit .node {
+    fill: var(--volt-2);
+  }
+  .voltcard__circuit .current {
+    stroke: var(--spark);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    filter: drop-shadow(0 0 5px rgba(255, 210, 63, 0.9));
+    stroke-dasharray: 26 400;
+    stroke-dashoffset: 426;
+    animation: flow 3.4s linear infinite;
+  }
+  .voltcard__circuit .c2 {
+    animation-duration: 2.6s;
+    animation-delay: 0.6s;
+    stroke: var(--volt-2);
+    filter: drop-shadow(0 0 5px rgba(110, 99, 255, 0.9));
+  }
+  @keyframes flow {
+    to { stroke-dashoffset: 0; }
+  }
+  .voltcard__bolt {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(0 8px 24px rgba(255, 210, 63, 0.4));
+    animation: floaty 5s var(--ease) infinite;
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .voltcard__readout {
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    display: grid;
+    gap: 0.1rem;
+  }
+  .voltcard__label {
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--on-dark-muted);
+  }
+  .voltcard__value {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .voltcard__value small {
+    font-size: 1rem;
+    color: var(--spark);
+    margin-left: 2px;
+  }
+  .voltcard__ok {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: #9fe6c0;
+  }
+  .voltcard__ok span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #34d399;
+    box-shadow: 0 0 8px #34d399;
+  }
+
+  @media (min-width: 900px) {
+    .hero__in {
+      grid-template-columns: 1.05fr 0.95fr;
+    }
+    .hero__panel {
+      display: flex;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero__dot,
+    .voltcard__bolt,
+    .voltcard__circuit .current {
+      animation: none;
+    }
+    .voltcard__circuit .current {
+      stroke-dasharray: none;
+      stroke-dashoffset: 0;
+      opacity: 0.7;
+    }
+  }
+</style>

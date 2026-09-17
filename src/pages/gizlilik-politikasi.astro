@@ -1,0 +1,70 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import { site } from '@data/site';
+
+const title = 'Gizlilik Politikası — Mr Volt';
+const description = 'Mr Volt web sitesi gizlilik politikası: hangi verileri neden işliyoruz, çerezler ve haklarınız.';
+---
+
+<BaseLayout title={title} description={description} path="/gizlilik-politikasi">
+  <PageHero title="Gizlilik Politikası" crumbs={[{ label: 'Gizlilik Politikası' }]} />
+  <section class="section">
+    <div class="container legal">
+      <p>
+        Bu gizlilik politikası, {site.name} ({site.url}) web sitesini ziyaret ettiğinizde kişisel
+        verilerinizin nasıl ele alındığını açıklar. Sitemizi kullanarak bu politikada anlatılan
+        uygulamaları kabul etmiş olursunuz.
+      </p>
+
+      <h2>Hangi bilgileri topluyoruz?</h2>
+      <p>
+        Sitemiz statik bir tanıtım sitesidir ve sizden üyelik, form kaydı gibi kişisel bilgi talep
+        etmez. Bizimle telefon ya da WhatsApp üzerinden iletişime geçtiğinizde paylaştığınız ad,
+        telefon numarası ve arıza bilgisi, yalnızca talebinize dönüş yapmak ve hizmeti sunmak için
+        kullanılır.
+      </p>
+
+      <h2>Çerezler ve ölçümleme</h2>
+      <p>
+        Sitenin çalışması için gerekli teknik veriler dışında sizi tanımlayan reklam çerezleri
+        kullanmıyoruz. İleride ziyaret istatistikleri için ölçümleme aracı eklenirse bu politika
+        güncellenecektir.
+      </p>
+
+      <h2>Bilgilerin paylaşımı</h2>
+      <p>
+        Paylaştığınız iletişim bilgilerini üçüncü kişilerle ticari amaçla paylaşmayız. Yalnızca yasal
+        olarak zorunlu olduğumuz hâllerde yetkili mercilerle paylaşım söz konusu olabilir.
+      </p>
+
+      <h2>Haklarınız</h2>
+      <p>
+        Kişisel verilerinizle ilgili taleplerinizi (bilgi alma, düzeltme, silme vb.) {site.phone.display}
+        numarası üzerinden bize iletebilirsiniz. Talebiniz en kısa sürede değerlendirilir.
+      </p>
+
+      <h2>İletişim</h2>
+      <p>
+        Gizlilikle ilgili her konuda {site.name} ile {site.phone.display} numarasından iletişime
+        geçebilirsiniz.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    max-width: var(--container-narrow);
+  }
+  .legal p {
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+    max-width: 72ch;
+  }
+  .legal h2 {
+    font-size: var(--fs-md);
+    margin: 2rem 0 0.6rem;
+    color: var(--text);
+  }
+</style>

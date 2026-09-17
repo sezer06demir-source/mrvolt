@@ -1,0 +1,127 @@
+---
+import Icon from '@components/Icon.astro';
+import { site, formProblems } from '@data/site';
+import { districts } from '@data/districts';
+---
+
+<form class="rform" id="request-form">
+  <div class="rform__row">
+    <label class="rform__field">
+      <span>Adınız</span>
+      <input type="text" name="name" autocomplete="name" placeholder="Ad Soyad" />
+    </label>
+    <label class="rform__field">
+      <span>İlçe</span>
+      <select name="district">
+        <option value="">Seçiniz</option>
+        {districts.map((d) => <option value={d.name}>{d.name}</option>)}
+        <option value="Diğer">Diğer</option>
+      </select>
+    </label>
+  </div>
+
+  <label class="rform__field">
+    <span>Sorun</span>
+    <select name="problem">
+      <option value="">Seçiniz</option>
+      {formProblems.map((p) => <option value={p}>{p}</option>)}
+    </select>
+  </label>
+
+  <label class="rform__field">
+    <span>Kısaca anlatın</span>
+    <textarea name="message" rows="3" placeholder="Örn. mutfaktaki sigorta sürekli atıyor"></textarea>
+  </label>
+
+  <button type="submit" class="btn btn--spark btn--block btn--lg">
+    <Icon name="whatsapp" size={20} /> WhatsApp’tan gönder
+  </button>
+  <p class="rform__note">
+    Form, mesajınızı WhatsApp’ta hazırlar; siz gönder’e basınca bize ulaşır. Dilerseniz doğrudan
+    <a href={site.phone.href}>{site.phone.display}</a> numarasını arayabilirsiniz.
+  </p>
+</form>
+
+<script define:vars={{ waBase: `https://wa.me/${site.whatsapp.number}` }}>
+  const form = document.getElementById('request-form');
+  form?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    const name = (data.get('name') || '').toString().trim();
+    const district = (data.get('district') || '').toString().trim();
+    const problem = (data.get('problem') || '').toString().trim();
+    const message = (data.get('message') || '').toString().trim();
+
+    const lines = ['Merhaba, Mr Volt’tan bilgi almak istiyorum.'];
+    if (name) lines.push(`İsim: ${name}`);
+    if (district) lines.push(`İlçe: ${district}`);
+    if (problem) lines.push(`Sorun: ${problem}`);
+    if (message) lines.push(`Detay: ${message}`);
+
+    const url = `${waBase}?text=${encodeURIComponent(lines.join('\n'))}`;
+    window.open(url, '_blank', 'noopener');
+  });
+</script>
+
+<style>
+  .rform {
+    display: grid;
+    gap: 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: clamp(1.2rem, 0.8rem + 1.5vw, 1.8rem);
+    box-shadow: var(--shadow-sm);
+  }
+  .rform__row {
+    display: grid;
+    gap: 0.9rem;
+  }
+  .rform__field {
+    display: grid;
+    gap: 0.35rem;
+  }
+  .rform__field > span {
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--text);
+  }
+  .rform input,
+  .rform select,
+  .rform textarea {
+    font: inherit;
+    font-size: var(--fs-base);
+    color: var(--text);
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 0.85rem;
+    width: 100%;
+    transition: border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+  }
+  .rform input:focus,
+  .rform select:focus,
+  .rform textarea:focus {
+    outline: none;
+    border-color: var(--volt);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--volt) 20%, transparent);
+  }
+  .rform textarea {
+    resize: vertical;
+    min-height: 84px;
+  }
+  .rform__note {
+    font-size: var(--fs-xs);
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .rform__note a {
+    color: var(--volt);
+    font-weight: 600;
+  }
+  @media (min-width: 520px) {
+    .rform__row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

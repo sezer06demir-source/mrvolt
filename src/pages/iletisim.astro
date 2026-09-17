@@ -1,0 +1,130 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import Icon from '@components/Icon.astro';
+import MapEmbed from '@components/MapEmbed.astro';
+import RequestForm from '@components/RequestForm.astro';
+import { site } from '@data/site';
+
+const title = 'İletişim — Mr Volt Ankara Elektrikçi';
+const description =
+  "Ankara'da elektrik arızası için Mr Volt'a ulaşın. Telefon ve WhatsApp: 0506 254 76 78. Haftanın 7 günü, Ankara ve tüm ilçelerine hizmet.";
+---
+
+<BaseLayout title={title} description={description} path="/iletisim">
+  <PageHero
+    eyebrow="İletişim"
+    title="Bize ulaşın"
+    subtitle="En hızlı yol telefon: arayın, durumu birlikte değerlendirelim. Dilerseniz aşağıdaki formu doldurup WhatsApp’tan da yazabilirsiniz."
+    crumbs={[{ label: 'İletişim' }]}
+  />
+
+  <section class="section">
+    <div class="container contact">
+      <div class="contact__info">
+        <a href={site.phone.href} class="cinfo reveal">
+          <span class="cinfo__ic"><Icon name="phone" size={22} /></span>
+          <span>
+            <span class="cinfo__label">Telefon</span>
+            <strong>{site.phone.display}</strong>
+          </span>
+        </a>
+        <a href={site.whatsapp.href} class="cinfo reveal" target="_blank" rel="noopener">
+          <span class="cinfo__ic cinfo__ic--wa"><Icon name="whatsapp" size={22} /></span>
+          <span>
+            <span class="cinfo__label">WhatsApp</span>
+            <strong>{site.phone.display}</strong>
+          </span>
+        </a>
+        <div class="cinfo reveal">
+          <span class="cinfo__ic"><Icon name="clock" size={22} /></span>
+          <span>
+            <span class="cinfo__label">Çalışma saatleri</span>
+            <strong>{site.hours.daysText} · {site.hours.display}</strong>
+          </span>
+        </div>
+        <div class="cinfo reveal">
+          <span class="cinfo__ic"><Icon name="map-pin" size={22} /></span>
+          <span>
+            <span class="cinfo__label">Hizmet bölgesi</span>
+            <strong>{site.address.areaLabel}</strong>
+          </span>
+        </div>
+
+        <MapEmbed class="contact__map" />
+      </div>
+
+      <div class="contact__form">
+        <h2 class="reveal">Arıza / bilgi formu</h2>
+        <p class="reveal muted">Formu doldurun, WhatsApp’ta hazır mesaj olarak açılsın; siz gönderince bize ulaşır.</p>
+        <RequestForm />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .contact__info {
+    display: grid;
+    gap: 0.8rem;
+    align-content: start;
+  }
+  .cinfo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.1rem 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  a.cinfo:hover {
+    border-color: var(--volt);
+  }
+  .cinfo__ic {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--volt) 12%, white);
+    color: var(--volt);
+  }
+  .cinfo__ic--wa {
+    background: color-mix(in srgb, #25d366 18%, white);
+    color: #128c3e;
+  }
+  .cinfo__label {
+    display: block;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  .cinfo strong {
+    font-family: var(--font-display);
+    font-size: var(--fs-md);
+    color: var(--text);
+  }
+  .contact :global(.contact__map) {
+    margin-top: 0.5rem;
+    min-height: 260px;
+  }
+  .contact__form h2 {
+    font-size: var(--fs-lg);
+  }
+  .contact__form .muted {
+    color: var(--muted);
+    margin: 0.5rem 0 1.2rem;
+    font-size: var(--fs-sm);
+  }
+  @media (min-width: 880px) {
+    .contact {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
+  }
+</style>

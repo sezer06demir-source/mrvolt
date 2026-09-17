@@ -1,0 +1,453 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Hero from '@components/Hero.astro';
+import Icon from '@components/Icon.astro';
+import ServiceCard from '@components/ServiceCard.astro';
+import DistrictCard from '@components/DistrictCard.astro';
+import Reviews from '@components/Reviews.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import CTASection from '@components/CTASection.astro';
+import { site, situations, promises, stats, steps, searchTags } from '@data/site';
+import { services } from '@data/services';
+import { districts } from '@data/districts';
+import { faq } from '@data/faq';
+
+const homeFaq = faq.slice(0, 5);
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaq.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const title = 'Mr Volt — Ankara Elektrikçi | Elektrik Arıza Servisi';
+const description =
+  "Mr Volt, Ankara'da elektrik arızalarına aynı gün çözen 28+ yıllık elektrik ekibi. Sigorta-pano, kaçak akım, priz-anahtar, aydınlatma ve tesisat. Arayın: 0506 254 76 78.";
+---
+
+<BaseLayout title={title} description={description} path="/" schemas={[faqSchema]}>
+  <Hero />
+
+  <!-- Şu an ne yaşıyorsunuz -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Şu an bir sorun mu var?</p>
+        <h2>En sık karşılaştığımız durumlar</h2>
+        <p>Hangisi sizin durumunuza yakınsa dokunun; ne yapmanız gerektiğini ve nasıl çözdüğümüzü anlatalım.</p>
+      </div>
+      <div class="sit-grid">
+        {
+          situations.map((s) => (
+            <a class="sit reveal" href={`/hizmetler/${s.slug}`}>
+              <span class="sit__icon"><Icon name={s.icon} size={24} /></span>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+              <span class="sit__link">Nasıl çözüyoruz <Icon name="arrow-right" size={16} /></span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Hizmetler -->
+  <section class="section" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Ne yapıyoruz</p>
+        <h2>Elektrikle ilgili her işi tek elden</h2>
+        <p>Küçük bir priz arızasından komple tesisata kadar; hepsini ölçerek, güvenli ve düzenli yapıyoruz.</p>
+      </div>
+      <div class="svc-grid">
+        {services.map((s) => <ServiceCard service={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- İstatistik + slogan bandı -->
+  <section class="statband dark">
+    <div class="container statband__in">
+      <p class="statband__slogan reveal">{site.slogan}</p>
+      <div class="statband__stats">
+        {
+          stats.map((st) => (
+            <div class="stat reveal">
+              <span class="stat__value">{st.value}</span>
+              <span class="stat__label">{st.label}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Neden Mr Volt -->
+  <section class="section">
+    <div class="container why">
+      <div class="why__head reveal">
+        <p class="eyebrow">Neden Mr Volt</p>
+        <h2>İşi ölçerek, dürüstçe ve zamanında yapıyoruz</h2>
+        <p>
+          28+ yıldır Ankara’da elektrik işiyle uğraşıyoruz. Amacımız arızayı geçici değil, bir kerede
+          ve kalıcı çözmek; fiyatı da baştan konuşmak.
+        </p>
+        <a href="/hakkimizda" class="btn btn--volt">Hakkımızda <Icon name="arrow-right" size={18} /></a>
+      </div>
+      <ul class="why__list">
+        {
+          promises.map((p) => (
+            <li class="why__item reveal">
+              <span class="why__icon"><Icon name={p.icon} size={22} /></span>
+              <div>
+                <h3>{p.title}</h3>
+                <p>{p.text}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- Nasıl çalışırız -->
+  <section class="section section--tight" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Nasıl çalışırız</p>
+        <h2>Aramanızdan işin bitişine dört adım</h2>
+      </div>
+      <ol class="steps">
+        {
+          steps.map((s, i) => (
+            <li class="step reveal">
+              <span class="step__num">{i + 1}</span>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Hizmet bölgeleri -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Hizmet bölgeleri</p>
+        <h2>Ankara’nın 10 ilçesinde yanınızdayız</h2>
+        <p>Bölgenizi seçin, o ilçedeki elektrik işlerimizi ve size nasıl ulaşacağımızı görün.</p>
+      </div>
+      <div class="dist-grid">
+        {districts.map((d) => <DistrictCard name={d.name} slug={d.slug} short={d.short} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Yorumlar -->
+  <section class="section" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Müşteri yorumları</p>
+        <h2>Ankaralıların bize güvenme sebebi</h2>
+      </div>
+      <Reviews limit={6} />
+    </div>
+  </section>
+
+  <!-- SSS -->
+  <section class="section">
+    <div class="container faq-wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Sık sorulanlar</p>
+        <h2>Merak edilenler</h2>
+        <p>Aradığınızı bulamazsanız <a href={site.phone.href} class="tlink">{site.phone.display}</a>’den sorabilirsiniz.</p>
+      </div>
+      <FAQAccordion items={homeFaq} />
+      <p class="faq-more reveal"><a href="/sss">Tüm soruları gör <Icon name="arrow-right" size={16} /></a></p>
+    </div>
+  </section>
+
+  <!-- Arama etiketleri (doğal ifadeler) -->
+  <section class="section section--tight" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal" style="margin-bottom:1.5rem">
+        <h2 style="font-size:var(--fs-lg)">Ankara’da elektrikçi mi arıyorsunuz?</h2>
+      </div>
+      <div class="tags reveal">
+        {searchTags.map((t) => <a href={t.href} class="tag">{t.label}</a>)}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  /* situations */
+  .sit-grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+  .sit {
+    display: block;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .sit:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: transparent;
+  }
+  .sit__icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--ink);
+    color: var(--spark);
+    margin-bottom: 1rem;
+  }
+  .sit h3 {
+    font-size: var(--fs-md);
+  }
+  .sit p {
+    margin-top: 0.5rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+  }
+  .sit__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-sm);
+    color: var(--volt);
+  }
+
+  .svc-grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+
+  /* stat bandı */
+  .statband {
+    background: linear-gradient(120deg, #14183a, #0b1026);
+  }
+  .statband__in {
+    display: grid;
+    gap: 2rem;
+    padding-block: clamp(2.6rem, 1.6rem + 4vw, 4rem);
+    align-items: center;
+  }
+  .statband__slogan {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: var(--fs-xl);
+    color: #fff;
+    max-width: 12ch;
+    line-height: 1.1;
+  }
+  .statband__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 1rem;
+  }
+  .stat__value {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem);
+    color: var(--spark);
+  }
+  .stat__label {
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+
+  /* why */
+  .why {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .why__head h2 {
+    font-size: var(--fs-xl);
+    margin-top: 0.4rem;
+  }
+  .why__head p {
+    margin-top: 1rem;
+    color: var(--muted);
+    max-width: 46ch;
+  }
+  .why__head .btn {
+    margin-top: 1.5rem;
+  }
+  .why__list {
+    display: grid;
+    gap: 1rem;
+  }
+  .why__item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    padding: 1.3rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .why__icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--volt) 12%, white);
+    color: var(--volt);
+    flex: none;
+  }
+  .why__item h3 {
+    font-size: var(--fs-md);
+  }
+  .why__item p {
+    margin-top: 0.3rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+  }
+
+  /* steps */
+  .steps {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+    counter-reset: step;
+  }
+  .step {
+    position: relative;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .step__num {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: var(--volt);
+    color: #fff;
+    font-family: var(--font-display);
+    font-weight: 800;
+    margin-bottom: 0.9rem;
+  }
+  .step h3 {
+    font-size: var(--fs-md);
+  }
+  .step p {
+    margin-top: 0.4rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+  }
+
+  /* districts */
+  .dist-grid {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  /* faq */
+  .faq-wrap {
+    max-width: var(--container-narrow);
+  }
+  .faq-more {
+    margin-top: 1.2rem;
+  }
+  .faq-more a,
+  .tlink {
+    color: var(--volt);
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+  }
+
+  /* tags */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .tag {
+    padding: 0.55rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: var(--fs-sm);
+    font-weight: 600;
+    color: var(--muted);
+    transition: all var(--dur) var(--ease);
+  }
+  .tag:hover {
+    border-color: var(--volt);
+    color: var(--volt);
+    transform: translateY(-2px);
+  }
+
+  @media (min-width: 560px) {
+    .sit-grid,
+    .svc-grid,
+    .steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .dist-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 900px) {
+    .statband__in {
+      grid-template-columns: auto 1fr;
+      gap: 3rem;
+    }
+    .statband__stats {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .why {
+      grid-template-columns: 1fr 1.1fr;
+      align-items: start;
+      gap: 3rem;
+    }
+    .why__head {
+      position: sticky;
+      top: 96px;
+    }
+  }
+  @media (min-width: 720px) {
+    .svc-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 1000px) {
+    .svc-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .steps {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .dist-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

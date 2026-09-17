@@ -1,0 +1,163 @@
+---
+import Logo from '@components/Logo.astro';
+import Icon from '@components/Icon.astro';
+import { site, nav } from '@data/site';
+---
+
+<header class="hdr" data-header>
+  <div class="container hdr__in">
+    <a href="/" class="hdr__logo" aria-label="Mr Volt ana sayfa">
+      <Logo />
+    </a>
+
+    <nav class="hdr__nav" aria-label="Ana menü">
+      {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+    </nav>
+
+    <div class="hdr__actions">
+      <a href={site.phone.href} class="btn btn--spark hdr__call">
+        <Icon name="phone" size={18} />
+        <span>{site.phone.display}</span>
+      </a>
+      <button type="button" class="hdr__burger" data-menu-toggle aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
+        <Icon name="menu" size={26} />
+      </button>
+    </div>
+  </div>
+
+  <div class="mmenu" id="mobile-menu" data-menu hidden>
+    <nav class="mmenu__nav" aria-label="Mobil menü">
+      {nav.map((n) => <a href={n.href} data-menu-link>{n.label}</a>)}
+    </nav>
+    <a href={site.phone.href} class="btn btn--spark btn--block btn--lg">
+      <Icon name="phone" size={20} /> {site.phone.display}
+    </a>
+    <a href={site.whatsapp.href} class="btn btn--ghost btn--block" target="_blank" rel="noopener">
+      <Icon name="whatsapp" size={20} /> WhatsApp’tan yaz
+    </a>
+  </div>
+</header>
+
+<style>
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid transparent;
+    transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .hdr[data-scrolled] {
+    border-bottom-color: var(--line);
+    box-shadow: 0 6px 24px -18px rgba(19, 26, 63, 0.5);
+  }
+  .hdr__in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 72px;
+  }
+  .hdr__logo {
+    color: var(--ink);
+    flex: none;
+  }
+  .hdr__nav {
+    display: none;
+    gap: 0.35rem;
+    margin-left: auto;
+  }
+  .hdr__nav a {
+    padding: 0.5rem 0.85rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: var(--fs-sm);
+    color: var(--muted);
+    transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease);
+  }
+  .hdr__nav a:hover {
+    color: var(--volt);
+    background: var(--surface-2);
+  }
+  .hdr__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex: none;
+  }
+  .hdr__call {
+    display: none;
+  }
+  .hdr__burger {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    color: var(--ink);
+  }
+  .hdr__burger:hover {
+    background: var(--surface-2);
+  }
+
+  .mmenu {
+    display: grid;
+    gap: 0.6rem;
+    padding: 1rem clamp(1.1rem, 0.5rem + 3vw, 2.5rem) 1.5rem;
+    border-top: 1px solid var(--line);
+    background: var(--surface);
+  }
+  .mmenu__nav {
+    display: grid;
+    gap: 0.15rem;
+    margin-bottom: 0.5rem;
+  }
+  .mmenu__nav a {
+    padding: 0.85rem 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-md);
+    border-bottom: 1px solid var(--line);
+  }
+  .mmenu__nav a:hover {
+    color: var(--volt);
+  }
+
+  @media (min-width: 860px) {
+    .hdr__nav {
+      display: flex;
+    }
+    .hdr__call {
+      display: inline-flex;
+    }
+    .hdr__burger,
+    .mmenu {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  const header = document.querySelector('[data-header]');
+  const toggle = document.querySelector('[data-menu-toggle]');
+  const menu = document.querySelector('[data-menu]');
+
+  const onScroll = () => {
+    if (!header) return;
+    if (window.scrollY > 8) header.setAttribute('data-scrolled', '');
+    else header.removeAttribute('data-scrolled');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  const setMenu = (open: boolean) => {
+    if (!menu || !toggle) return;
+    menu.hidden = !open;
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+  };
+  toggle?.addEventListener('click', () => setMenu(menu?.hidden ?? true));
+  document.querySelectorAll('[data-menu-link]').forEach((l) => l.addEventListener('click', () => setMenu(false)));
+</script>

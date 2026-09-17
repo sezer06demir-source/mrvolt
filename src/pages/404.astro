@@ -1,0 +1,67 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import Icon from '@components/Icon.astro';
+import { site } from '@data/site';
+---
+
+<BaseLayout title="Sayfa bulunamadı — Mr Volt" description="Aradığınız sayfa bulunamadı." path="/404" noindex>
+  <section class="nf dark">
+    <div class="container nf__in">
+      <span class="nf__bolt"><Icon name="zap" size={40} /></span>
+      <p class="nf__code">404</p>
+      <h1>Bu hatta akım yok</h1>
+      <p class="nf__text">Aradığınız sayfayı bulamadık. Ama elektrik arızanız varsa doğru yerdesiniz.</p>
+      <div class="nf__cta">
+        <a href="/" class="btn btn--spark btn--lg">Ana sayfaya dön</a>
+        <a href={site.phone.href} class="btn btn--ghost btn--lg"><Icon name="phone" size={20} /> {site.phone.display}</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .nf {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    background: var(--ink);
+    text-align: center;
+  }
+  .nf__in {
+    padding-block: 4rem;
+  }
+  .nf__bolt {
+    display: inline-grid;
+    place-items: center;
+    width: 76px;
+    height: 76px;
+    border-radius: 20px;
+    background: rgba(255, 210, 63, 0.12);
+    color: var(--spark);
+    margin-bottom: 1rem;
+  }
+  .nf__code {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(3rem, 2rem + 6vw, 5rem);
+    color: var(--volt-2);
+    line-height: 1;
+  }
+  .nf h1 {
+    color: #fff;
+    font-size: var(--fs-xl);
+    margin-top: 0.5rem;
+  }
+  .nf__text {
+    color: var(--on-dark-muted);
+    margin: 0.8rem auto 0;
+    max-width: 44ch;
+  }
+  .nf__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.8rem;
+  }
+</style>

@@ -1,0 +1,16 @@
+{
+  "name": "Mr Volt — Ankara Elektrikçi",
+  "short_name": "Mr Volt",
+  "description": "Ankara elektrikçi ve elektrik arıza servisi. Sigorta, pano, kaçak akım, aydınlatma ve tesisat.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b1026",
+  "theme_color": "#0b1026",
+  "lang": "tr",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,70 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import { site } from '@data/site';
+
+const title = 'KVKK Aydınlatma Metni — Mr Volt';
+const description =
+  '6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında Mr Volt aydınlatma metni: verilerinizin işlenme amacı, hukuki sebebi ve haklarınız.';
+---
+
+<BaseLayout title={title} description={description} path="/kvkk-aydinlatma-metni">
+  <PageHero title="KVKK Aydınlatma Metni" crumbs={[{ label: 'KVKK Aydınlatma Metni' }]} />
+  <section class="section">
+    <div class="container legal">
+      <p>
+        6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca, veri sorumlusu sıfatıyla
+        {site.name}, kişisel verilerinizin işlenmesine ilişkin olarak sizi aşağıdaki şekilde
+        bilgilendirir.
+      </p>
+
+      <h2>İşlenen veriler ve amacı</h2>
+      <p>
+        Bizimle telefon veya WhatsApp yoluyla iletişime geçtiğinizde paylaştığınız ad-soyad, telefon
+        numarası, adres/bölge ve arıza-talep bilgisi; yalnızca talebinizi karşılamak, randevu
+        oluşturmak ve elektrik hizmetini sunmak amacıyla işlenir.
+      </p>
+
+      <h2>Hukuki sebep</h2>
+      <p>
+        Verileriniz, bir hizmet sözleşmesinin kurulması ve ifası için gerekli olması ve meşru
+        menfaat hukuki sebeplerine dayanılarak işlenir.
+      </p>
+
+      <h2>Verilerin aktarımı</h2>
+      <p>
+        Kişisel verileriniz, hizmetin gerektirdiği ölçü dışında üçüncü kişilerle paylaşılmaz. Yalnızca
+        kanunen yetkili kamu kurumlarına, ilgili mevzuatın öngördüğü hâllerde aktarım yapılabilir.
+      </p>
+
+      <h2>Saklama süresi</h2>
+      <p>
+        Verileriniz, işlenme amacının gerektirdiği süre boyunca ve ilgili mevzuatta öngörülen zamanaşımı
+        süreleri kadar saklanır; sürenin dolmasının ardından silinir veya anonim hâle getirilir.
+      </p>
+
+      <h2>Haklarınız (KVKK m. 11)</h2>
+      <p>
+        Kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, düzeltilmesini
+        veya silinmesini isteme ve kanunda sayılan diğer haklarınızı kullanmak için {site.phone.display}
+        numarası üzerinden bize başvurabilirsiniz.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .legal {
+    max-width: var(--container-narrow);
+  }
+  .legal p {
+    color: var(--muted);
+    margin-bottom: 1.1rem;
+    max-width: 72ch;
+  }
+  .legal h2 {
+    font-size: var(--fs-md);
+    margin: 2rem 0 0.6rem;
+    color: var(--text);
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+/**
+ * Mr Volt logo — kıvılcım şimşek markası + kelime işareti.
+ * Metin currentColor kullanır; koyu/açık zemine uyar.
+ */
+interface Props {
+  size?: number;
+  class?: string;
+}
+const { size = 34, class: cls = '' } = Astro.props;
+---
+
+<span class={`logo ${cls}`} aria-label="Mr Volt">
+  <span class="logo__mark" style={`--s:${size}px`} aria-hidden="true">
+    <svg viewBox="0 0 64 64" width={size} height={size}>
+      <defs>
+        <linearGradient id="lg-mark" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4b3bff"></stop>
+          <stop offset="1" stop-color="#0b1026"></stop>
+        </linearGradient>
+      </defs>
+      <rect width="64" height="64" rx="15" fill="url(#lg-mark)"></rect>
+      <path
+        d="M37.5 7 18 37.5a1.6 1.6 0 0 0 1.35 2.46H30l-3.1 17.2a1 1 0 0 0 1.83.73L47.9 27.3A1.6 1.6 0 0 0 46.55 24.8H35.7l4.2-16.1A1.35 1.35 0 0 0 37.5 7Z"
+        fill="#ffd23f"></path>
+    </svg>
+  </span>
+  <span class="logo__text">Mr Volt</span>
+</span>
+
+<style>
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.32rem;
+    letter-spacing: -0.02em;
+    color: currentColor;
+    line-height: 1;
+  }
+  .logo__mark {
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(0 6px 14px rgba(75, 59, 255, 0.35));
+  }
+  .logo__mark svg {
+    display: block;
+  }
+  .logo__text {
+    white-space: nowrap;
+  }
+</style>

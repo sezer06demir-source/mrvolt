@@ -1,0 +1,115 @@
+---
+import Stars from '@components/Stars.astro';
+import Icon from '@components/Icon.astro';
+import { reviews } from '@data/site';
+
+interface Props {
+  limit?: number;
+}
+const { limit } = Astro.props;
+const list = limit ? reviews.slice(0, limit) : reviews;
+const avg = (reviews.reduce((s, r) => s + r.rating, 0) / reviews.length).toFixed(1);
+---
+
+<div class="revs">
+  <div class="revs__summary reveal">
+    <div class="revs__score">
+      <strong>{avg}</strong>
+      <Stars rating={Number(avg)} size={18} />
+      <span>{reviews.length} müşteri değerlendirmesi</span>
+    </div>
+  </div>
+  <div class="revs__grid">
+    {
+      list.map((r) => (
+        <figure class="rev reveal">
+          <Icon name="quote" size={22} class="rev__q" />
+          <blockquote>{r.text}</blockquote>
+          <figcaption>
+            <span class="rev__name">{r.name}</span>
+            <span class="rev__meta">
+              <Stars rating={r.rating} size={13} /> · {r.area}
+            </span>
+          </figcaption>
+        </figure>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .revs__summary {
+    margin-bottom: 1.75rem;
+  }
+  .revs__score {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.7rem 1.1rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    box-shadow: var(--shadow-sm);
+  }
+  .revs__score strong {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--text);
+  }
+  .revs__score span {
+    font-size: var(--fs-sm);
+    color: var(--muted);
+  }
+  .revs__grid {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+  .rev {
+    position: relative;
+    margin: 0;
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+  .rev :global(.rev__q) {
+    color: color-mix(in srgb, var(--volt) 30%, white);
+    margin-bottom: 0.5rem;
+  }
+  .rev blockquote {
+    font-size: var(--fs-base);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .rev figcaption {
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
+  .rev__name {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--text);
+  }
+  .rev__meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.2rem;
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  @media (min-width: 640px) {
+    .revs__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1000px) {
+    .revs__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

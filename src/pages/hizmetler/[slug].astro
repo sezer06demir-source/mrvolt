@@ -1,0 +1,184 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import Icon from '@components/Icon.astro';
+import FAQAccordion from '@components/FAQAccordion.astro';
+import CTASection from '@components/CTASection.astro';
+import ServiceCard from '@components/ServiceCard.astro';
+import { site } from '@data/site';
+import { services, getService } from '@data/services';
+import { districts } from '@data/districts';
+
+export function getStaticPaths() {
+  return services.map((s) => ({ params: { slug: s.slug } }));
+}
+
+const { slug } = Astro.params;
+const service = getService(slug!)!;
+const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
+
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  serviceType: service.title,
+  name: `${service.title} — Ankara`,
+  description: service.seoDescription,
+  provider: { '@type': 'Electrician', name: site.name, telephone: site.phone.e164, url: site.url },
+  areaServed: { '@type': 'City', name: 'Ankara' },
+  url: `${site.url}/hizmetler/${service.slug}`,
+};
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: service.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+---
+
+<BaseLayout
+  title={service.seoTitle}
+  description={service.seoDescription}
+  path={`/hizmetler/${service.slug}`}
+  schemas={[serviceSchema, faqSchema]}
+>
+  <PageHero
+    eyebrow="Hizmet"
+    title={service.title}
+    subtitle={service.intro}
+    crumbs={[{ label: 'Hizmetler', href: '/hizmetler' }, { label: service.title }]}
+    showCta
+  />
+
+  <section class="section">
+    <div class="container detail">
+      <div class="detail__main">
+        <div class="reveal">
+          <h2>Neler yapıyoruz</h2>
+          <ul class="points">
+            {service.points.map((p) => <li><Icon name="check-circle" size={20} /> {p}</li>)}
+          </ul>
+        </div>
+
+        <div class="prose reveal">
+          {service.body.map((para) => <p>{para}</p>)}
+        </div>
+
+        <div class="reveal">
+          <h2>Sık sorulanlar</h2>
+          <FAQAccordion items={service.faq} />
+        </div>
+      </div>
+
+      <aside class="detail__aside">
+        <div class="callbox reveal">
+          <span class="callbox__eyebrow"><Icon name="spark" size={16} /> Hemen çözelim</span>
+          <p class="callbox__text">{service.title} için Ankara’nın her ilçesine gidiyoruz. Durumu telefonda anlatın, ne yapılacağını birlikte konuşalım.</p>
+          <a href={site.phone.href} class="btn btn--spark btn--block btn--lg"><Icon name="phone" size={20} /> {site.phone.display}</a>
+          <a href={site.whatsapp.href} class="btn btn--ghost btn--block" target="_blank" rel="noopener"><Icon name="whatsapp" size={18} /> WhatsApp’tan yaz</a>
+          <p class="callbox__hours"><Icon name="clock" size={15} /> {site.hours.daysText} · {site.hours.display}</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--tight" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Diğer hizmetler</p>
+        <h2>Bunlar da ilginizi çekebilir</h2>
+      </div>
+      <div class="others">
+        {others.map((s) => <ServiceCard service={s} />)}
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .detail {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .detail__main {
+    display: grid;
+    gap: 2.5rem;
+    min-width: 0;
+  }
+  .detail__main h2 {
+    font-size: var(--fs-lg);
+    margin-bottom: 1.1rem;
+  }
+  .points {
+    display: grid;
+    gap: 0.7rem;
+  }
+  .points li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.65rem;
+    align-items: start;
+    font-size: var(--fs-base);
+    color: var(--text);
+  }
+  .points svg {
+    color: var(--ok);
+    margin-top: 2px;
+  }
+  .prose p {
+    margin-bottom: 1.1rem;
+    color: var(--muted);
+    font-size: var(--fs-md);
+    max-width: 68ch;
+  }
+  .callbox {
+    position: sticky;
+    top: 96px;
+    background: var(--ink);
+    color: var(--on-dark);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow);
+  }
+  .callbox__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--spark);
+    font-size: var(--fs-sm);
+  }
+  .callbox__text {
+    margin: 0.8rem 0 1.3rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+  .callbox .btn {
+    margin-bottom: 0.6rem;
+  }
+  .callbox__hours {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
+    font-size: var(--fs-xs);
+    color: var(--on-dark-muted);
+  }
+  .others {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 640px) {
+    .others {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 960px) {
+    .detail {
+      grid-template-columns: 1fr 340px;
+      align-items: start;
+    }
+  }
+</style>

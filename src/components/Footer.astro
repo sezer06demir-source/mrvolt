@@ -1,0 +1,169 @@
+---
+import Logo from '@components/Logo.astro';
+import Icon from '@components/Icon.astro';
+import { site } from '@data/site';
+import { services } from '@data/services';
+import { districts } from '@data/districts';
+
+const year = new Date().getFullYear();
+const footerDistricts = districts.slice(0, 8);
+---
+
+<footer class="ft dark">
+  <div class="container">
+    <div class="ft__top">
+      <div class="ft__brand">
+        <a href="/" aria-label="Mr Volt ana sayfa" style="color:#fff"><Logo /></a>
+        <p class="ft__slogan">{site.slogan}</p>
+        <p class="ft__desc">
+          Ankara ve tüm ilçelerinde elektrik arıza, sigorta-pano, kaçak akım, priz-anahtar, aydınlatma ve
+          tesisat işleri. 28+ yıllık saha tecrübesiyle.
+        </p>
+        <div class="ft__cta">
+          <a href={site.phone.href} class="btn btn--spark"><Icon name="phone" size={18} /> {site.phone.display}</a>
+          <a href={site.whatsapp.href} class="btn btn--ghost" target="_blank" rel="noopener"><Icon name="whatsapp" size={18} /> WhatsApp</a>
+        </div>
+      </div>
+
+      <nav class="ft__col" aria-label="Hizmetler">
+        <h3>Hizmetler</h3>
+        <ul>
+          {services.map((s) => <li><a href={`/hizmetler/${s.slug}`}>{s.title}</a></li>)}
+        </ul>
+      </nav>
+
+      <nav class="ft__col" aria-label="Hizmet bölgeleri">
+        <h3>Bölgeler</h3>
+        <ul>
+          {footerDistricts.map((d) => <li><a href={`/hizmet-bolgeleri/${d.slug}`}>{d.name} Elektrikçi</a></li>)}
+          <li><a href="/hizmet-bolgeleri" class="ft__more">Tüm ilçeler →</a></li>
+        </ul>
+      </nav>
+
+      <nav class="ft__col" aria-label="Kurumsal">
+        <h3>Kurumsal</h3>
+        <ul>
+          <li><a href="/hakkimizda">Hakkımızda</a></li>
+          <li><a href="/sss">Sık sorulanlar</a></li>
+          <li><a href="/iletisim">İletişim</a></li>
+          <li><a href="/gizlilik-politikasi">Gizlilik Politikası</a></li>
+          <li><a href="/kvkk-aydinlatma-metni">KVKK Aydınlatma Metni</a></li>
+        </ul>
+        <p class="ft__area"><Icon name="map-pin" size={16} /> {site.address.areaLabel}</p>
+      </nav>
+    </div>
+
+    <hr class="rule" />
+
+    <div class="ft__bottom">
+      <p>© {year} {site.name}. Tüm hakları saklıdır.</p>
+      <p class="ft__credit">
+        <Icon name="spark" size={14} />
+        Tasarım, SEO &amp; güvenlik: <span>Sezer Demir</span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .ft {
+    background: var(--ink);
+  }
+  .ft__top {
+    display: grid;
+    gap: 2.5rem;
+    padding-block: clamp(3rem, 2rem + 4vw, 4.5rem);
+    grid-template-columns: 1fr;
+  }
+  .ft__slogan {
+    margin-top: 1rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--spark);
+    font-size: var(--fs-md);
+  }
+  .ft__desc {
+    margin-top: 0.6rem;
+    color: var(--on-dark-muted);
+    max-width: 42ch;
+    font-size: var(--fs-sm);
+  }
+  .ft__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.4rem;
+  }
+  .ft__col h3 {
+    font-size: var(--fs-sm);
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 1rem;
+  }
+  .ft__col ul {
+    display: grid;
+    gap: 0.65rem;
+  }
+  .ft__col a {
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+    transition: color var(--dur) var(--ease);
+  }
+  .ft__col a:hover {
+    color: var(--spark);
+  }
+  .ft__more {
+    color: #fff !important;
+    font-weight: 600;
+  }
+  .ft__area {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.2rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+  .ft__area svg {
+    color: var(--spark);
+  }
+  .ft__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding-block: 1.5rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-xs);
+  }
+  .ft__credit {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.85rem;
+    border: 1px solid var(--on-dark-line);
+    border-radius: 999px;
+    letter-spacing: 0.01em;
+  }
+  .ft__credit svg {
+    color: var(--spark);
+  }
+  .ft__credit span {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: #fff;
+  }
+
+  @media (min-width: 640px) {
+    .ft__top {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 960px) {
+    .ft__top {
+      grid-template-columns: 2fr 1fr 1fr 1.2fr;
+      gap: 3rem;
+    }
+  }
+</style>

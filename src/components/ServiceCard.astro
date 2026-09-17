@@ -1,0 +1,68 @@
+---
+import Icon from '@components/Icon.astro';
+import type { Service } from '@data/services';
+interface Props {
+  service: Pick<Service, 'slug' | 'title' | 'short' | 'icon'>;
+}
+const { service } = Astro.props;
+---
+
+<a class="scard reveal" href={`/hizmetler/${service.slug}`}>
+  <span class="scard__icon"><Icon name={service.icon} size={24} /></span>
+  <span class="scard__body">
+    <span class="scard__title">{service.title}</span>
+    <span class="scard__text">{service.short}</span>
+  </span>
+  <span class="scard__go" aria-hidden="true"><Icon name="arrow-up-right" size={18} /></span>
+</a>
+
+<style>
+  .scard {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start;
+    gap: 1rem;
+    padding: 1.4rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+  }
+  .scard:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: transparent;
+  }
+  .scard__icon {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--volt) 12%, white);
+    color: var(--volt);
+    flex: none;
+  }
+  .scard__title {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-md);
+    color: var(--text);
+  }
+  .scard__text {
+    display: block;
+    margin-top: 0.3rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+    line-height: 1.55;
+  }
+  .scard__go {
+    color: var(--muted-2);
+    transition: color var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .scard:hover .scard__go {
+    color: var(--volt);
+    transform: translate(2px, -2px);
+  }
+</style>

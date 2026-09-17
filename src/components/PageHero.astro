@@ -1,0 +1,79 @@
+---
+import Breadcrumb from '@components/Breadcrumb.astro';
+import Icon from '@components/Icon.astro';
+import { site } from '@data/site';
+
+interface Props {
+  title: string;
+  subtitle?: string;
+  eyebrow?: string;
+  crumbs: { label: string; href?: string }[];
+  showCta?: boolean;
+}
+const { title, subtitle, eyebrow, crumbs, showCta = false } = Astro.props;
+---
+
+<section class="phero dark">
+  <div class="phero__grid" aria-hidden="true"></div>
+  <div class="container phero__in">
+    <Breadcrumb items={crumbs} />
+    {eyebrow && <p class="phero__eyebrow">{eyebrow}</p>}
+    <h1 class="phero__title">{title}</h1>
+    {subtitle && <p class="phero__sub">{subtitle}</p>}
+    {
+      showCta && (
+        <div class="phero__cta">
+          <a href={site.phone.href} class="btn btn--spark">
+            <Icon name="phone" size={18} /> {site.phone.display}
+          </a>
+          <a href={site.whatsapp.href} class="btn btn--ghost" target="_blank" rel="noopener">
+            <Icon name="whatsapp" size={18} /> WhatsApp
+          </a>
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  .phero {
+    position: relative;
+    background: var(--ink);
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .phero__grid {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle at 88% 0%, rgba(75, 59, 255, 0.4), transparent 55%);
+  }
+  .phero__in {
+    padding-block: clamp(2.4rem, 1.6rem + 4vw, 4rem);
+  }
+  .phero__eyebrow {
+    margin-top: 1.4rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--spark);
+    font-size: var(--fs-sm);
+  }
+  .phero__title {
+    margin-top: 0.8rem;
+    font-size: var(--fs-2xl);
+    color: #fff;
+    max-width: 20ch;
+  }
+  .phero__sub {
+    margin-top: 1rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-md);
+    max-width: 60ch;
+  }
+  .phero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    margin-top: 1.8rem;
+  }
+</style>

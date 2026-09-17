@@ -1,0 +1,77 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import DistrictCard from '@components/DistrictCard.astro';
+import MapEmbed from '@components/MapEmbed.astro';
+import CTASection from '@components/CTASection.astro';
+import { districts } from '@data/districts';
+
+const title = 'Hizmet Bölgeleri — Ankara Elektrikçi | Mr Volt';
+const description =
+  "Mr Volt Ankara'nın 10 ilçesine elektrik hizmeti veriyor: Sincan, Yenikent, Etimesgut, Çankaya, Yenimahalle, Mamak, Keçiören, Kahramankazan, Pursaklar, Gölbaşı. Arayın: 0506 254 76 78.";
+---
+
+<BaseLayout title={title} description={description} path="/hizmet-bolgeleri">
+  <PageHero
+    eyebrow="Hizmet bölgeleri"
+    title="Ankara’nın 10 ilçesinde yanınızdayız"
+    subtitle="Merkezden çevre ilçelere kadar Ankara geneline gidiyoruz. İlçenizi seçin, o bölgedeki elektrik işlerimizi görün."
+    crumbs={[{ label: 'Hizmet bölgeleri' }]}
+    showCta
+  />
+
+  <section class="section">
+    <div class="container region">
+      <div class="region__list">
+        {districts.map((d) => <DistrictCard name={`${d.name} Elektrikçi`} slug={d.slug} short={d.short} />)}
+      </div>
+      <div class="region__map">
+        <MapEmbed class="region__mapembed" />
+        <p class="region__note">Harita Ankara genelini gösterir; sabit bir adres yerine bulunduğunuz yere geliyoruz.</p>
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .region {
+    display: grid;
+    gap: 2rem;
+  }
+  .region__list {
+    display: grid;
+    gap: 0.8rem;
+  }
+  .region__map {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .region :global(.region__mapembed) {
+    min-height: 340px;
+    height: 100%;
+  }
+  .region__note {
+    font-size: var(--fs-xs);
+    color: var(--muted);
+  }
+  @media (min-width: 760px) {
+    .region__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1000px) {
+    .region {
+      grid-template-columns: 1.3fr 1fr;
+      align-items: start;
+    }
+    .region__list {
+      grid-template-columns: 1fr;
+    }
+    .region__map {
+      position: sticky;
+      top: 96px;
+    }
+  }
+</style>

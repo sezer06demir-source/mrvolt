@@ -1,0 +1,166 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import PageHero from '@components/PageHero.astro';
+import Icon from '@components/Icon.astro';
+import CTASection from '@components/CTASection.astro';
+import { site, stats, promises } from '@data/site';
+
+const title = 'Hakkımızda — Mr Volt Ankara Elektrikçi';
+const description =
+  "Mr Volt, 28+ yıllık saha tecrübesiyle Ankara'da elektrik arıza, tesisat ve aydınlatma işleri yapan bir ekip. İşi ölçerek, dürüst fiyatla ve zamanında yapıyoruz.";
+---
+
+<BaseLayout title={title} description={description} path="/hakkimizda">
+  <PageHero
+    eyebrow="Hakkımızda"
+    title="Ankara’da 28 yıldır elektrik işinin içindeyiz"
+    subtitle={site.slogan}
+    crumbs={[{ label: 'Hakkımızda' }]}
+  />
+
+  <section class="section">
+    <div class="container about">
+      <div class="about__text prose">
+        <p class="reveal">
+          Mr Volt, Ankara’da yılların içinde biriken bir tecrübenin adı. Bu işe çıraklıkla başlayıp
+          bugün 28 yılı geride bırakan bir ekibiz; sigorta kutusundan sanayi panosuna, tek bir prizden
+          komple tesisata kadar elektriğin hemen her hâliyle uğraştık.
+        </p>
+        <p class="reveal">
+          Zamanla şunu öğrendik: iyi elektrik işi, gösterişte değil ayrıntıda saklıdır. Bir arızaya
+          gittiğimizde önce sebebini anlamaya çalışırız; körlemesine parça değiştirip “oldu bitti”
+          demeyiz. Çünkü ölçmeden yapılan tamir çoğu zaman birkaç gün sonra geri gelir, biz de sizi
+          ikinci kez uğraştırmak istemeyiz.
+        </p>
+        <p class="reveal">
+          Fiyat konusunda da açığız. Ne yapılacağını ve ne kadar tutacağını işe başlamadan söyler,
+          onayınızı almadan başlamayız. Küçük iş, büyük iş ayırmadan; sizin için önemli olan güvenlikse
+          bizim için de önemlidir. Kısacası: elektrikte güven, ustada tecrübe.
+        </p>
+      </div>
+
+      <div class="about__stats">
+        {
+          stats.map((s) => (
+            <div class="astat reveal">
+              <span class="astat__value">{s.value}</span>
+              <span class="astat__label">{s.label}</span>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Çalışma şeklimiz</p>
+        <h2>Sizin için değişmeyen sözlerimiz</h2>
+      </div>
+      <div class="vals">
+        {
+          promises.map((p) => (
+            <div class="val reveal">
+              <span class="val__ic"><Icon name={p.icon} size={22} /></span>
+              <h3>{p.title}</h3>
+              <p>{p.text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTASection />
+</BaseLayout>
+
+<style>
+  .about {
+    display: grid;
+    gap: 2.5rem;
+  }
+  .prose p {
+    margin-bottom: 1.2rem;
+    color: var(--muted);
+    font-size: var(--fs-md);
+    max-width: 66ch;
+  }
+  .prose p:first-child {
+    color: var(--text);
+    font-size: var(--fs-lg);
+    font-family: var(--font-display);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .about__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .astat {
+    padding: 1.4rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-align: center;
+  }
+  .astat__value {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--volt);
+  }
+  .astat__label {
+    color: var(--muted);
+    font-size: var(--fs-sm);
+  }
+  .vals {
+    display: grid;
+    gap: 1.1rem;
+    grid-template-columns: 1fr;
+  }
+  .val {
+    padding: 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .val__ic {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: var(--ink);
+    color: var(--spark);
+    margin-bottom: 0.9rem;
+  }
+  .val h3 {
+    font-size: var(--fs-md);
+  }
+  .val p {
+    margin-top: 0.4rem;
+    color: var(--muted);
+    font-size: var(--fs-sm);
+  }
+  @media (min-width: 640px) {
+    .vals {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 960px) {
+    .about {
+      grid-template-columns: 1.5fr 1fr;
+      align-items: start;
+    }
+    .about__stats {
+      position: sticky;
+      top: 96px;
+    }
+    .vals {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+</style>
