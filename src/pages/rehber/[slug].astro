@@ -53,6 +53,7 @@ const faqSchema = {
   <PageHero
     eyebrow="Rehber"
     title={post.title}
+    subtitle={post.excerpt}
     crumbs={[{ label: 'Rehber', href: '/rehber' }, { label: post.title }]}
   />
 
@@ -148,8 +149,7 @@ const faqSchema = {
   .article__cover {
     width: 100%;
     height: auto;
-    aspect-ratio: 1200 / 630;
-    object-fit: cover;
+    display: block;
     border-radius: var(--radius);
     border: 1px solid var(--line);
     margin-bottom: 2rem;
