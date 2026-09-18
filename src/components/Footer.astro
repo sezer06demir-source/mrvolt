@@ -57,10 +57,11 @@ const footerDistricts = districts.slice(0, 8);
 
     <div class="ft__bottom">
       <p>© {year} {site.name}. Tüm hakları saklıdır.</p>
-      <p class="ft__credit">
-        <Icon name="spark" size={14} />
-        Tasarım, SEO &amp; güvenlik: <span>Sezer Demir</span>
-      </p>
+      <div class="ft__credit">
+        <span class="ft__credit-ic"><Icon name="spark" size={15} /></span>
+        <span class="ft__credit-label">Tasarım · SEO · Güvenlik</span>
+        <span class="ft__credit-name">Sezer Demir</span>
+      </div>
     </div>
   </div>
 </footer>
@@ -138,21 +139,59 @@ const footerDistricts = districts.slice(0, 8);
     font-size: var(--fs-xs);
   }
   .ft__credit {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 0.45rem;
-    padding: 0.4rem 0.85rem;
-    border: 1px solid var(--on-dark-line);
+    gap: 0.6rem;
+    padding: 0.45rem 1rem 0.45rem 0.5rem;
     border-radius: 999px;
-    letter-spacing: 0.01em;
+    background: linear-gradient(120deg, rgba(75, 59, 255, 0.22), rgba(255, 210, 63, 0.12));
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 30px -14px rgba(75, 59, 255, 0.6);
+    overflow: hidden;
   }
-  .ft__credit svg {
+  .ft__credit::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+    transform: skewX(-18deg);
+    animation: sheen 5.5s ease-in-out infinite;
+  }
+  .ft__credit-ic {
+    display: grid;
+    place-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: linear-gradient(140deg, var(--volt), #171e44);
     color: var(--spark);
+    box-shadow: 0 0 12px rgba(255, 210, 63, 0.55);
+    flex: none;
   }
-  .ft__credit span {
+  .ft__credit-label {
+    font-size: var(--fs-xs);
+    color: var(--on-dark-muted);
+    letter-spacing: 0.02em;
+  }
+  .ft__credit-name {
     font-family: var(--font-display);
-    font-weight: 700;
-    color: #fff;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    background: linear-gradient(100deg, #ffe6a1, var(--spark) 55%, #ffb020);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  @keyframes sheen {
+    0%, 100% { left: -60%; }
+    55%, 70% { left: 130%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ft__credit::after { animation: none; display: none; }
   }
 
   @media (min-width: 640px) {
