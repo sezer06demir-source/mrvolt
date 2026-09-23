@@ -24,7 +24,7 @@ const faqSchema = {
 };
 ---
 
-<BaseLayout title={d.seoTitle} description={d.seoDescription} path={`/hizmet-bolgeleri/${d.slug}`} schemas={[faqSchema]}>
+<BaseLayout title={d.seoTitle} description={d.seoDescription} seoArea={d.name} path={`/hizmet-bolgeleri/${d.slug}`} schemas={[faqSchema]}>
   <PageHero
     eyebrow={`${d.name} · Ankara`}
     title={`${d.name} Elektrikçi`}
