@@ -1,0 +1,44 @@
+# Mr Volt
+
+> Ankara'da elektrik arızalarını aynı gün çözen deneyimli elektrik ekibi. Sigorta ve pano, kaçak akım rölesi, priz-anahtar, aydınlatma-avize ve elektrik tesisatı işleri yapıyor. 28 yılı aşkın tecrübe. Her gün 08:00–23:00 arası çalışıyor; Ankara'nın tüm ilçelerine gidiyor.
+
+- Telefon: 0506 254 76 78
+- Hizmet alanı: Ankara ve tüm ilçeleri
+- Çalışma saatleri: Her gün 08:00–23:00
+- Web sitesi: https://www.mrvolt.com.tr
+- Fiyatlandırma: Arıza yerinde görüldükten sonra net fiyat verilir.
+
+## Hizmet bölgeleri
+
+- [Çankaya](https://www.mrvolt.com.tr/hizmet-bolgeleri/cankaya)
+- [Yenimahalle](https://www.mrvolt.com.tr/hizmet-bolgeleri/yenimahalle)
+- [Keçiören](https://www.mrvolt.com.tr/hizmet-bolgeleri/kecioren)
+- [Mamak](https://www.mrvolt.com.tr/hizmet-bolgeleri/mamak)
+- [Etimesgut](https://www.mrvolt.com.tr/hizmet-bolgeleri/etimesgut)
+- [Sincan](https://www.mrvolt.com.tr/hizmet-bolgeleri/sincan)
+- [Yenikent](https://www.mrvolt.com.tr/hizmet-bolgeleri/yenikent)
+- [Gölbaşı](https://www.mrvolt.com.tr/hizmet-bolgeleri/golbasi)
+- [Pursaklar](https://www.mrvolt.com.tr/hizmet-bolgeleri/pursaklar)
+- [Kahramankazan](https://www.mrvolt.com.tr/hizmet-bolgeleri/kahramankazan)
+- [Tüm hizmet bölgeleri](https://www.mrvolt.com.tr/hizmet-bolgeleri)
+
+## Hizmetler
+
+- [Elektrik arıza tespiti](https://www.mrvolt.com.tr/hizmetler/elektrik-ariza-tespiti)
+- [Sigorta ve pano](https://www.mrvolt.com.tr/hizmetler/sigorta-pano)
+- [Kaçak akım rölesi](https://www.mrvolt.com.tr/hizmetler/kacak-akim-rolesi)
+- [Priz ve anahtar](https://www.mrvolt.com.tr/hizmetler/priz-anahtar)
+- [Aydınlatma ve avize](https://www.mrvolt.com.tr/hizmetler/aydinlatma-avize)
+- [Elektrik tesisatı](https://www.mrvolt.com.tr/hizmetler/elektrik-tesisati)
+- [Ev ve iş yeri elektriği](https://www.mrvolt.com.tr/hizmetler/ev-isyeri-elektrigi)
+
+## Rehber
+
+- [Rehber yazıları](https://www.mrvolt.com.tr/rehber): kaçak akım rölesi, sigorta atması, priz ısınması gibi konularda pratik yazılar
+- [Sık sorulan sorular](https://www.mrvolt.com.tr/sss)
+
+## Optional
+
+- [Hakkımızda](https://www.mrvolt.com.tr/hakkimizda)
+- [İletişim](https://www.mrvolt.com.tr/iletisim)
+- [Site haritası](https://www.mrvolt.com.tr/sitemap-index.xml)
