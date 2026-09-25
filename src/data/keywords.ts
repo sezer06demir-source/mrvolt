@@ -21,5 +21,5 @@ export const keywords: Keyword[] = [
   { term: 'kaçak akım rölesi Ankara', target: '/hizmetler/kacak-akim-rolesi', coveredBy: ['kacak-akim-rolesi-nedir-neden-atar'] },
   { term: 'sigorta atması Ankara', target: '/hizmetler/sigorta-pano', coveredBy: ['sigorta-neden-atar-ne-yapmali'] },
   { term: 'Keçiören elektrikçi', target: '/hizmet-bolgeleri/kecioren', coveredBy: [] },
-  { term: 'Yenimahalle elektrikçi', target: '/hizmet-bolgeleri/yenimahalle', coveredBy: [] },
+  { term: 'Yenimahalle elektrikçi', target: '/hizmet-bolgeleri/yenimahalle', coveredBy: ['priz-isinmasi-notr-hatti-kopmasi-yenimahalle'] },
 ];

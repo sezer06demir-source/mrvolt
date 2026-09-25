@@ -148,6 +148,69 @@ export const posts: BlogPost[] = [
       { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
     ],
   },
+  {
+    slug: 'priz-isinmasi-notr-hatti-kopmasi-yenimahalle',
+    title: "Priz Isınması ve Nötr Hattı Kopması: Yenimahalle'de Kış Öncesi Kontrol",
+    description:
+      "Priz ısınıyor, ışıklar kısılıp parlıyor mu? Nötr hattı kopmasının belirtileri ve neden acil olduğu, Yenimahalle'den sahadan anlatım. Mr Volt: 0506 254 76 78.",
+    keyword: 'Yenimahalle elektrikçi',
+    date: '2026-09-25',
+    readingMin: 6,
+    excerpt:
+      'Kışa girerken ısıtıcılar prize takılmaya başlayınca ısınan prizler ve kopuk nötr hattı en çok gördüğümüz iki sorun oluyor. Yenimahalle’den sahadan, belirtileri ve ne zaman acil olduğunu anlatıyoruz.',
+    intro:
+      "Havalar soğumaya başladı mı telefon bir anda değişir. Isıtıcı, elektrikli soba, kombi destekli petek gibi cihazlar prizlere girer girmez yıl boyu fark edilmeyen zayıf noktalar birden ortaya çıkar. Yenimahalle'de, özellikle Batıkent ve Demetevler tarafındaki eski apartmanlarda bu dönemde en sık gördüğümüz iki şey ısınan prizler ve kopan ya da gevşeyen nötr hattı. İkisi de görünüşte küçük bir rahatsızlık gibi başlar, ama ikisi de ihmal edilince ciddi bir tehlikeye dönüşür.",
+    sections: [
+      {
+        h: 'Priz neden ısınır?',
+        p: [
+          'Bir prizin ısınmasının tek bir sebebi vardır aslında: bir yerde akımın rahat geçemediği, sıkışmış bir temas noktası. Buna geçiş direnci diyoruz. Vida zamanla gevşer, klemens paslanır ya da bağlantı baştan gevşek bırakılmıştır; akım o daralan noktadan zorla geçmeye çalışırken orada ısı üretir. Yaz aylarında bu ısı fark edilmez çünkü priz zaten hafif yük taşır, ama kışın 2000 watt’lık bir ısıtıcı ya da soba takıldığında aynı zayıf bağlantı birkaç kat daha fazla akım taşımak zorunda kalır.',
+          'İkinci sık sebep, kablo kesitinin cihaza uygun olmamasıdır. Eski Yenimahalle apartmanlarında çoğu priz hattı 1,5 mm² kesitle çekilmiştir; bu, aydınlatma ve küçük cihazlar için yeterlidir ama yüksek güçlü bir ısıtıcıyı sürekli çalıştırmak için zorlanır. Kablo ince kaldığında ısınan sadece priz değil, duvarın içindeki hattın kendisi de olabilir; bu daha tehlikelidir çünkü gözle görülmez.',
+        ],
+      },
+      {
+        h: 'Nötr hattı kopması ne demek, neden tehlikeli?',
+        p: [
+          'Şebekede faz (canlı) ve nötr olmak üzere iki hat vardır; nötr, akımın devresini tamamlayıp geri döndüğü yoldur. Bir apartmanda paylaşılan nötr hattı bir noktada gevşer, korozyona uğrar ya da tamamen kopar ise ortaya "nötr kopması" denen bir arıza çıkar. Bunun en klasik belirtisi, ışıkların birden parlayıp sönmesi ya da bazı prizlerdeki gerilimin normalin çok üstüne çıkmasıdır; bu sırada bir yandan bazı cihazlar zayıf çalışırken diğerleri aşırı gerilimden yanabilir.',
+          'Nötr kopması özellikle üç fazlı beslenen, birden fazla dairenin ortak nötr kullandığı eski apartmanlarda görülür. Yenimahalle’de İvedik ve Ostim tarafındaki atölyelerde faz dengesizliğinden ısınan nötr hattını sık görüyoruz; konut tarafında ise Çayyolu ve Ümitköy’deki bazı bloklarda ortak nötr bağlantısının gevşediği durumlarla karşılaşıyoruz. İkisi de farklı sebeplerle aynı sonuca varır: nötr güvenilmez hale gelir ve cihazlar risk altında kalır.',
+        ],
+      },
+      {
+        h: 'Bu belirtileri görürseniz ciddiye alın',
+        p: [
+          'Bir prize dokunduğunuzda ya da yakınından geçtiğinizde hissedilir bir sıcaklık varsa, bu normal değildir. Priz kapağının rengi hafif kararmışsa ya da hafif yanık kokusu alıyorsanız, içeride klemens zaten ısınmaya başlamış demektir. Bu durumda o prizi hemen kullanmayı bırakın, mümkünse o hattın sigortasını indirin.',
+          'Işıkların özellikle bir cihaz çalışırken kısılıp parlaması, bazı ampullerin beklenmedik şekilde patlaması ya da bir odadaki prizlerin voltajının diğerlerinden farklı hissedilmesi (örneğin bir cihazın normalden hızlı ısındığı, diğerinin zayıf çalıştığı) nötr sorununun tipik işaretleridir. Bunlar tek seferlik bir tesadüf değil, hattın kendini yormaya başladığının haberidir.',
+        ],
+      },
+      {
+        h: 'Sonbahar-kış öncesi neye bakmak gerekir?',
+        p: [
+          'Isıtıcı sezonu başlamadan önce yapılacak en faydalı iş, o cihazları takacağınız prizleri tek tek kontrol etmektir. Priz kapağını sökmeden bile anlaşılabilecek işaretler vardır: fişi takıp çıkarırken gevşeklik hissediyor musunuz, priz eskiden beri gıcırdıyor mu, kapak rengi solmuş mu. Şüpheli bir priz varsa cihazı oraya takmadan önce baktırmak, kış ortasında karanlıkta kalmaktan çok daha ucuza gelir.',
+          'Ayrıca panodaki kaçak akım rölesinin test butonuna basıp çalıştığından emin olmak da bu dönemde iyi bir alışkanlıktır; ıslak zeminli banyo ve mutfağın olduğu her evde 30 mA’lik bir röle bulunmalı. Yüksek güçlü ısıtıcıları mümkünse uzatma kablosu yerine sabit ve sağlam bir prize takmak, hem ısınma riskini hem de nötr hattına binen ek yükü azaltır.',
+        ],
+      },
+      {
+        h: "Yenimahalle'de bu tür arızalarda ne yapıyoruz",
+        p: [
+          'Mr Volt olarak Yenimahalle’de bu tip çağrılara giderken önce ısınan prizin ya da hattın hangi noktada olduğunu ölçüyoruz; sonra klemens, kablo kesiti ve bağlantı kalitesini kontrol ediyoruz. Sorun tek bir prizdeyse değişimi kısa sürede bitiyor; sorun hattın kesitindeyse ısıtıcı için ayrı ve doğru kesitli bir hat çekmeyi öneriyoruz.',
+          'Nötr kopması şüphesi varsa iş biraz daha dikkatli ilerliyor; panoyu ve ortak hattı ölçüp gerilim dengesizliğinin kaynağını buluyoruz. Bu tür arızalarda vakit kaybetmemek önemli, çünkü nötr sorunları kendi kendine düzelmez, aksine zamanla daha fazla cihazı etkiler.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Priz ısınıyor ama henüz koku yok, yine de tehlikeli mi?', a: 'Evet, ısı kokudan önce gelir. Isınma hissettiğiniz an o prizi kullanmayı bırakıp kontrol ettirmek, koku ya da kararma beklemekten çok daha güvenlidir.' },
+      { q: 'Işıklar bazen parlayıp bazen kısılıyor, bu nötr sorunu mu?', a: 'Olabilir, özellikle bir cihaz devreye girdiğinde oluyorsa bu ihtimal güçlenir. Panoyu ve ortak nötr hattını ölçmeden kesin konuşmak doğru olmaz, ama bu belirtiyi ihmal etmemek gerekir.' },
+      { q: 'Isıtıcıyı uzatma kablosuyla kullanmak ne kadar riskli?', a: 'İnce kesitli bir uzatma kablosu yüksek güçlü bir ısıtıcının akımını taşımakta zorlanır ve zamanla ısınır. Mümkünse ısıtıcıyı sabit, sağlam bir prize doğrudan takmak daha güvenlidir.' },
+      { q: 'Nötr hattı koptuğunda cihazlarım zarar görür mü?', a: 'Görebilir; gerilim dengesi bozulduğunda bazı cihazlar normalden yüksek gerilim alıp zarar görebilir. Bu yüzden belirtileri fark eder etmez ölçüm yaptırmak, cihaz kaybetmekten daha ucuza gelir.' },
+      { q: 'Bu kontrolü kış gelmeden mi yaptırmalıyım?', a: 'Evet, tercihen ısıtıcı ve soba gibi cihazları devreye almadan önce. Yoğun kullanım başladıktan sonra zayıf bir bağlantı çok daha hızlı sorun çıkarır.' },
+    ],
+    related: [
+      { label: 'Priz ve Anahtar', href: '/hizmetler/priz-anahtar' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: 'Yenimahalle Elektrikçi', href: '/hizmet-bolgeleri/yenimahalle' },
+      { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
