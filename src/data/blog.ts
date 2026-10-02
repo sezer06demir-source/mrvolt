@@ -249,7 +249,7 @@ export const posts: BlogPost[] = [
         h: 'Montaj sırasında sık yaptığımız küçük düzeltmeler',
         p: [
           'Gevşek klemens yerine vidalı veya yaylı bağlantı elemanı kullanmak, kabloyu tavan kutusunun içine düzgün toplamak, ağır avizelerde kancayı tavana değil doğrudan yapıya sabitlemek gibi küçük ama önemli ayrıntılar var. Bunları atlayan bir montaj, bir süre sonra avizenin sarkması veya bağlantının gevşeyip ısınmasıyla sonuçlanabilir.',
-          'Şerit LED ve spot karışık kullanılan tavanlarda ayrıca bir trafo/sürücü hesabı gerekiyor; yanlış seçilen sürücü hem ışığın flaşör yapmasına hem de erken bozulmasına yol açıyor.',
+          'Şerit LED ve spot karışık kullanılan tavanlarda ayrıca bir trafo/sürücü hesabı gerekiyor; yanlış seçilen sürücü hem ışığın titremesine hem de erken bozulmasına yol açıyor.',
         ],
       },
       {
