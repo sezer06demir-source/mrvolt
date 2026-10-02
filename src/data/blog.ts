@@ -211,6 +211,68 @@ export const posts: BlogPost[] = [
       { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
     ],
   },
+  {
+    slug: 'avize-spot-montaji-kecioren-eski-bina',
+    title: "Keçiören'de Eski Apartmanlarda Avize ve Spot Montajı: Dikkat Edilmesi Gerekenler",
+    description:
+      "Keçiören'in eski apartmanlarında avize veya spot montajı yaptırmadan önce tavan kutusu, kablo kesiti ve sigorta grubu kontrolü neden şart? Mr Volt: 0506 254 76 78.",
+    keyword: 'Keçiören elektrikçi',
+    date: '2026-10-02',
+    readingMin: 5,
+    excerpt:
+      "Keçiören'in eski apartmanlarında avize ya da spot taktırmak göründüğü kadar basit değil; tavan kutusu, kablo kesiti ve sigorta grubu önce kontrol edilmeli. Sahadan anlattık.",
+    intro:
+      "Etlik, Kalaba ve Aktepe tarafında onlarca yıllık apartmanlarda çalışıyoruz ve avize ya da spot montajı çağrılarının çoğunda aslında basit bir montaj değil, küçük bir tesisat kontrolü yapıyoruz. Keçiören elektrikçi olarak şunu baştan söyleyelim: tavandaki kutuyu açıp direkt avizeyi bağlamak her zaman yeterli değildir. Altındaki hat ve bağlantı sağlam değilse, güzel bir avize bile zamanla sorun çıkarır.",
+    sections: [
+      {
+        h: 'Eski tavan kutusu yeni bir avizeyi taşır mı?',
+        p: [
+          'Doğrudan cevap: çoğu zaman taşır, ama önce kontrol etmek gerekir. 70\'li-80\'li yıllarda yapılmış Keçiören apartmanlarında tavan kutusu genelde tek bir basit lüster için düşünülmüştür; ince kablo ve gevşek bağlantı sık görülür. Üstüne ağır metal bir avize ya da çok sayıda spot eklenince o ince bağlantı ısınabilir.',
+          'Biz önce kutudaki kabloyu ve klemensi gözle ve ölçerek kontrol ediyoruz. Kablo sağlam ve kesit yeterliyse montaja direkt geçiyoruz; değilse kısa bir hat yenilemesiyle devam ediyoruz.',
+        ],
+      },
+      {
+        h: 'Spot montajında aydınlatma sigortası neden önemli?',
+        p: [
+          'Doğrudan cevap: birden fazla spot aynı hatta eklendiğinde o hattın yükü artar; eski panoda aydınlatma sigortası zaten zorlanıyorsa spot sayısı arttıkça sigorta daha sık atmaya başlar. Bu yüzden 6-8 spotluk bir salon aydınlatması öncesi o hattın hangi sigortadan beslendiğine bakıyoruz.',
+          'Bazı Aktepe ve Sancaktepe dairelerinde aydınlatma ve priz hattı hâlâ aynı sigortada; spot sayısı arttığında o grup toplam yükü taşıyamayabilir. Böyle durumlarda spotları ayrı bir hatta almayı öneriyoruz, bu hem daha güvenli hem de ileride aydınlatmayı tek başına kesebilmenizi sağlıyor.',
+        ],
+      },
+      {
+        h: 'Topraklama avize montajında gerekli mi?',
+        p: [
+          'Doğrudan cevap: metal gövdeli avize ve spot armatürlerinde topraklama varsa bağlanmalıdır; yoksa armatür gövdesi bir arıza anında gerilimli kalabilir. Eski binalarda tavan kutusuna topraklama hattı çekilmemiş olabilir; bu durumda armatürü olduğu gibi monte etmek yerine durumu müşteriye açıkça anlatıyoruz.',
+          'Topraklaması olmayan bir hatta illa avize takılamaz anlamına gelmiyor; ama metal gövdeli ve özellikle banyo, mutfak gibi ıslak alana yakın armatürlerde bu noktayı atlamıyoruz.',
+        ],
+      },
+      {
+        h: 'Montaj sırasında sık yaptığımız küçük düzeltmeler',
+        p: [
+          'Gevşek klemens yerine vidalı veya yaylı bağlantı elemanı kullanmak, kabloyu tavan kutusunun içine düzgün toplamak, ağır avizelerde kancayı tavana değil doğrudan yapıya sabitlemek gibi küçük ama önemli ayrıntılar var. Bunları atlayan bir montaj, bir süre sonra avizenin sarkması veya bağlantının gevşeyip ısınmasıyla sonuçlanabilir.',
+          'Şerit LED ve spot karışık kullanılan tavanlarda ayrıca bir trafo/sürücü hesabı gerekiyor; yanlış seçilen sürücü hem ışığın flaşör yapmasına hem de erken bozulmasına yol açıyor.',
+        ],
+      },
+      {
+        h: "Keçiören'de avize ve spot montajını nasıl yapıyoruz?",
+        p: [
+          "Mr Volt olarak önce tavan kutusunu ve besleme hattını kontrol ediyor, gerekiyorsa aydınlatma sigortasını ayırıyoruz. Sonra armatürü güvenli ve düzgün biçimde sabitleyip topraklama bağlantısını kontrol ederek teslim ediyoruz. Keçiören'in Etlik, Kalaba, Aktepe, Ayvalı ve Bağlum tarafında bu işlere sık gidiyoruz; eski bina olsun yeni olsun aynı titizlikle çalışıyoruz.",
+          'Sadece armatür asmak isteyenler için montaj kısa sürüyor; ama hat veya pano tarafında bir eksik görürsek bunu mutlaka söylüyoruz, çünkü güzel bir avizenin altında zayıf bir bağlantı bırakmak işi yarım bırakmak olur.',
+        ],
+      },
+    ],
+    faq: [
+      { q: "Keçiören'de eski bir apartmanda avize taktırmak tehlikeli mi?", a: "Kendi başına tehlikeli değildir; ama tavan kutusu ve kablo kontrol edilmeden ağır bir avize veya çok sayıda spot eklenirse bağlantı zamanla ısınabilir. Montajdan önce kısa bir kontrol bu riski ortadan kaldırır." },
+      { q: 'Spot sayısı arttıkça sigorta neden daha sık atıyor?', a: 'Aydınlatma hattı sınırlı bir yük taşır; spot sayısı arttığında o hat zorlanabilir. Eski panoda aydınlatma ve priz aynı sigortadaysa bu daha sık yaşanır, ayrı hat çekmek kalıcı çözümdür.' },
+      { q: 'Metal gövdeli avizede topraklama yoksa ne olur?', a: 'Bir arıza anında armatür gövdesi gerilimli kalabilir. Tavan kutusunda topraklama varsa bağlanmalı, yoksa durumu değerlendirip gerekirse hattı tamamlamak gerekir.' },
+      { q: 'Şerit LED için her sürücü uygun mu?', a: 'Değil; yanlış seçilen sürücü ışığın titremesine ve erken arızaya yol açar. LED gücüne ve uzunluğuna uygun sürücü seçmek gerekir.' },
+    ],
+    related: [
+      { label: 'Aydınlatma ve Avize', href: '/hizmetler/aydinlatma-avize' },
+      { label: 'Keçiören Elektrikçi', href: '/hizmet-bolgeleri/kecioren' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
