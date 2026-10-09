@@ -22,4 +22,5 @@ export const keywords: Keyword[] = [
   { term: 'sigorta atması Ankara', target: '/hizmetler/sigorta-pano', coveredBy: ['sigorta-neden-atar-ne-yapmali'] },
   { term: 'Keçiören elektrikçi', target: '/hizmet-bolgeleri/kecioren', coveredBy: ['avize-spot-montaji-kecioren-eski-bina'] },
   { term: 'Yenimahalle elektrikçi', target: '/hizmet-bolgeleri/yenimahalle', coveredBy: ['priz-isinmasi-notr-hatti-kopmasi-yenimahalle'] },
+  { term: 'Mamak elektrikçi', target: '/hizmet-bolgeleri/mamak', coveredBy: ['serit-led-spot-aydinlatma-mamak'] },
 ];

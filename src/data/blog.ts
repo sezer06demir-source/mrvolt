@@ -273,6 +273,61 @@ export const posts: BlogPost[] = [
       { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
     ],
   },
+  {
+    slug: 'serit-led-spot-aydinlatma-mamak',
+    title: "Mamak'ta Şerit LED ve Spot Aydınlatma: Sürücü Seçimi Neden Ömrü Belirliyor?",
+    description:
+      "Mamak'ta şerit LED ve spot montajında sürücü (trafo) gücü yanlış seçilirse ışık erken bozulur ya da titrer. Sahadan doğru seçim ve kablo kesiti anlatımı. Mr Volt: 0506 254 76 78.",
+    keyword: 'Mamak elektrikçi',
+    date: '2026-10-09',
+    readingMin: 5,
+    excerpt:
+      "Mamak'ta şerit LED ve spot aydınlatma çağrılarının çoğunda asıl sorun armatürde değil, yanlış seçilmiş sürücüde çıkıyor. Doğru güç hesabını ve sık yapılan hataları sahadan anlattık.",
+    intro:
+      "Mamak'ta Abidinpaşa ve Gülveren tarafındaki evlerde son dönemde en çok aldığımız iş değişti: artık avize değil, tavan arası şerit LED ve salon spotları isteniyor. Güzel bir iş ama göründüğünden hassas; yanlış sürücü ya da kalın kesilmemiş bir hesap, altı ay içinde ışığı titreten ya da tamamen söndüren bir soruna dönüşüyor. Mamak elektrikçi olarak şunu baştan söylüyoruz: şerit LED'de göze en çok dokunan parça armatür değil, görünmeyen sürücüdür.",
+    sections: [
+      {
+        h: 'Şerit LED sürücüsü (trafo) neden bu kadar önemli?',
+        p: [
+          'Şerit LED 220V ile değil, genelde 12V ya da 24V doğru akımla çalışır; bu dönüşümü sürücü yapar. Sürücünün gücü (watt) şeride göre az seçilirse cihaz sürekli sınırda çalışır, ısınır ve beklenenden çok önce bozulur. Fazla büyük seçilmesi doğrudan tehlikeli değildir ama israf ve bazen titreme sebebidir.',
+          'Doğru hesap basittir: şeridin metre başına çektiği watt, toplam metre ile çarpılır, üstüne yüzde yirmi kadar pay bırakılır. Bir Gülveren\'deki salonda bu hesabı atlayıp hazır bir sürücü takılmıştı; üç ay sonra ışık titremeye başlamıştı, çünkü sürücü gerçek yükün sınırında zorlanıyordu.',
+        ],
+      },
+      {
+        h: 'Spot montajında kablo kesiti ve sigorta grubu',
+        p: [
+          'Birden fazla spot aynı hatta toplandığında o hattın yükü artar; eski Mamak apartmanlarında aydınlatma hattı genelde ince kesitle ve tek sigortadan çekilmiştir. Altı yedi spotu bu hatta eklemek, sigortanın sık atmasına ya da kablonun ısınmasına yol açabilir.',
+          'Biz önce o hattın hangi sigortadan beslendiğine ve kesitine bakıyoruz. Yetersizse spotları ayrı bir aydınlatma hattına alıyoruz; bu hem daha güvenli oluyor hem de ileride tek bir anahtardan tüm aydınlatmayı yönetmeyi kolaylaştırıyor.',
+        ],
+      },
+      {
+        h: 'Sahada en sık gördüğümüz üç hata',
+        p: [
+          'Birincisi, tek bir sürücüye gereğinden uzun şerit bağlamak; şeridin uçlarındaki ışık belli belirsiz kısılır, bu gerilim düşümünün işaretidir. İkincisi, sürücüyü asma tavan içine havasız bir yere sıkıştırmak; sürücüler ısındıkça ömrünü kaybeder, hafif havalanan bir yere konmalı.',
+          'Üçüncüsü, şerit bağlantılarını lehimsiz, sadece konektörle bırakıp üstünü kapatmak; zamanla temas gevşer ve şeridin bir kısmı sönük kalır. Bunların hiçbiri büyük işler değil ama montaj sırasında atlanınca sonradan tekrar söküp düzeltmek daha çok zaman alıyor.',
+        ],
+      },
+      {
+        h: "Mamak'ta şerit LED ve spot montajını nasıl yapıyoruz?",
+        p: [
+          "Önce aydınlatacağınız alanı ve istediğiniz parlaklığı konuşup şerit tipine göre doğru sürücüyü hesaplıyoruz; spot tarafında ise besleme hattını ve sigorta grubunu kontrol ediyoruz. Mamak'ın Abidinpaşa, Tuzluçayır, Natoyolu ve Gülveren tarafında bu işlere sık gidiyoruz; keşif sonrası net fiyatı söyleyip iş öyle başlıyor.",
+          'Montaj bittiğinde şeridi en az yarım saat çalışır durumda bırakıp ısınma ve titreme kontrolü yapıyoruz. Bu küçük test, altı ay sonra geri dönüp aynı işe bakmamızı önlüyor.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Şerit LED neden zamanla sönük bir bölge bırakıyor?', a: 'Genelde gerilim düşümü ya da gevşeyen bir konektördür. Şeridin uzunluğuna uygun sürücü ve lehimli bağlantı bu sorunu çözer.' },
+      { q: 'Sürücüyü asma tavan içine koymak sakıncalı mı?', a: 'Tamamen havasız, kapalı bir cepte sıcaklık birikir ve sürücünün ömrünü kısaltır. Hafif hava alan bir noktaya yerleştirmek daha sağlıklıdır.' },
+      { q: 'Altı spotu eski aydınlatma hattına ekleyebilir miyim?', a: 'Hattın kesiti ve sigortası yeterliyse evet; değilse sigorta sık atar. Önce o hattı kontrol edip gerekirse ayrı hat öneriyoruz.' },
+      { q: 'Mamak\'ta şerit LED montajı ne kadar sürer?', a: 'Standart bir salon için genelde aynı gün bitiyor; hesap ve sürücü seçimi önceden yapıldığında montaj kısa sürüyor.' },
+    ],
+    related: [
+      { label: 'Aydınlatma ve Avize', href: '/hizmetler/aydinlatma-avize' },
+      { label: 'Mamak Elektrikçi', href: '/hizmet-bolgeleri/mamak' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: "Keçiören'de Avize ve Spot Montajı", href: '/rehber/avize-spot-montaji-kecioren-eski-bina' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
