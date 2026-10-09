@@ -328,6 +328,154 @@ export const posts: BlogPost[] = [
       { label: "Keçiören'de Avize ve Spot Montajı", href: '/rehber/avize-spot-montaji-kecioren-eski-bina' },
     ],
   },
+  {
+    slug: 'torekent-kisin-elektrikli-isitici-sigorta-atiyor',
+    title: 'Törekent’te Kışın Elektrikli Isıtıcı Sigortayı Attırıyorsa: Hangi Priz, Kaç Watt?',
+    description:
+      'Sincan Törekent’te kış gelince elektrikli ısıtıcı açılınca sigorta mı atıyor? Watt hesabı, uzatma kablosu tehlikesi ve doğru priz seçimi usta anlatımıyla. Mr Volt: 0506 254 76 78.',
+    keyword: 'Törekent elektrikçi',
+    date: '2026-10-09',
+    readingMin: 5,
+    excerpt:
+      'Törekent’te ekim sonu gelince telefonumuz değişir: “Isıtıcıyı açınca sigorta atıyor.” Çoğu zaman ısıtıcı da sigorta da sağlamdır; sorun, aynı hatta toplanan yüktür. Basit bir watt hesabıyla nedenini anlattık.',
+    intro:
+      'Sincan Törekent’te havalar soğumaya başlayınca gelen çağrıların konusu da değişiyor. Yazın klima, kışın elektrikli ısıtıcı. Bloklarda doğalgaz olsa bile çocuk odasına, banyoya ya da kombinin yetmediği köşe odaya bir ısıtıcı ekleniyor. Akşam saatinde ısıtıcı açılıyor, kettle çalışıyor, çamaşır makinesi dönüyor ve sigorta iniyor. Yirmi sekiz yıldır bu işi yapıyoruz, bu sahneyi her kış yeniden görüyoruz. Nedenini ve doğru kullanımı Törekent’teki evlerden örneklerle anlatalım.',
+    sections: [
+      {
+        h: 'Bir ısıtıcı kaç amper çeker?',
+        p: [
+          'Kabaca hesap şu: ısıtıcının watt değerini 230’a bölün, çektiği akımı bulursunuz. 2000 watt’lık bir ısıtıcı yaklaşık 9 amper, 2500 watt’lık bir ısıtıcı yaklaşık 11 amper çeker. Evlerde priz hatları genelde 16 amperlik sigortayla korunur.',
+          'Yani tek bir ısıtıcı bir priz hattının gücünün yarısından fazlasını tek başına kullanır. Aynı hatta ikinci bir ısıtıcı ya da bir kettle eklendiğinde toplam 16 amperi geçer ve sigorta görevini yapıp hattı keser. Sigorta atıyorsa bozuk değildir, kabloyu koruyordur.',
+        ],
+      },
+      {
+        h: 'Aynı odada iki ısıtıcı neden sorun çıkarır?',
+        p: [
+          'Bir odadaki prizler çoğu zaman aynı sigortadan beslenir. Bazen yan odanın prizleri de aynı hattadır. İki ısıtıcıyı aynı odaya koyduğunuzda büyük ihtimalle ikisini de aynı hatta yüklemiş olursunuz.',
+          'Geçen kış Törekent’te bir dairede salon ve yatak odasındaki iki ısıtıcı aynı sigortaya bağlı çıktı. Ev sahibi sigortayı üç kez değiştirmiş, her seferinde “bu da bozuk” demiş. Sigortaların hepsi sağlamdı. Isıtıcılardan birini başka bir hattaki prize aldık, sorun bitti. Panonuzdaki sigortaların hangi odayı beslediğini bilmiyorsanız, gelince birlikte etiketleyelim.',
+        ],
+      },
+      {
+        h: 'Isıtıcı uzatma kablosuna takılır mı?',
+        p: [
+          'Takılmamalı. Isıtıcı, saatlerce yüksek akım çeken bir cihazdır. İnce kablolu, ucuz bir uzatmada kablo ve fiş ısınır; üstü halıyla örtülüyse ısı dağılamaz. Uzatma sigortayı attırmayabilir ama kendi içinde ısınarak erimeye başlar. En tehlikelisi de budur.',
+          'Isıtıcıyı doğrudan duvar prizine takın. Priz uzaksa kalıcı çözüm uzatma değil, o noktaya yeni bir priz çekmektir. Prize takılı fişe birkaç dakika sonra elinizi sürün; ılık olması normaldir, eli yakacak kadar sıcaksa priz ya da fiş temas yapmıyordur, o prizi kullanmayın.',
+        ],
+      },
+      {
+        h: 'Priz ısınıyorsa sorun ısıtıcıda mı?',
+        p: [
+          'Çoğu zaman değil. Priz içindeki yay zamanla gevşer, fişi tam kavramaz. Temas yüzeyi küçülünce aynı akım daha küçük bir alandan geçer ve orası ısınır. Prizin kapağında sararma, kararma ya da plastik kokusu görüyorsanız o priz değişmeli.',
+          'Törekent’teki bloklarda yıllardır aynı prize her kış ısıtıcı takılan evlerde bunu sık görüyoruz. Prizi değiştirirken arkasındaki kablo uçlarına da bakıyoruz; ısınmış ve sertleşmiş uçları kesip temiz yerden yeniden bağlıyoruz.',
+        ],
+      },
+      {
+        h: 'Kalıcı çözüm ne?',
+        p: [
+          'Isıtıcıyı sürekli kullandığınız bir oda varsa o odaya kendi sigortası olan ayrı bir priz hattı çekmek en sağlıklı yoldur. Bu hem sigorta atmasını bitirir hem de kabloyu sınırda çalışmaktan kurtarır. Çocuk odası ve banyo için ayrıca kaçak akım rölesinin çalıştığını test etmenizi öneririz.',
+          'Mr Volt olarak Törekent dahil Sincan’ın tüm mahallelerine ve Ankara geneline aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Önce panoyu ve hattı ölçüyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Isıtıcıyı açınca sigorta atıyor, sigorta mı bozuk?',
+        a: 'Genelde hayır. Aynı hatta ısıtıcıyla birlikte başka yüksek güçlü cihazlar çalışıyordur. Isıtıcıyı başka bir hattaki prize alın; yine atıyorsa bizi arayın.',
+      },
+      {
+        q: 'Uzatma kablosuyla ısıtıcı kullanmak tehlikeli mi?',
+        a: 'Evet. Uzun süre yüksek akım çeken ısıtıcı ince bir uzatmada kabloyu ve fişi ısıtır. Isıtıcıyı doğrudan duvar prizine takın.',
+      },
+      {
+        q: 'Törekent’e akşam gelir misiniz?',
+        a: 'Geliriz. 23:00’e kadar çağrı alıyoruz; kışın akşam saatlerindeki sigorta şikayetlerine aynı gün bakıyoruz.',
+      },
+      {
+        q: 'Isıtıcı için ayrı hat çekmek zor bir iş mi?',
+        a: 'Çoğu dairede mevcut borulardan ya da kanal içinden aynı gün çekilebiliyor. Panoya ve güzergaha bakıp işe başlamadan söylüyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Priz ve Anahtar', href: '/hizmetler/priz-anahtar' },
+      { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
+    ],
+  },
+  {
+    slug: 'sincan-fatih-eski-ev-priz-anahtar-degisimi',
+    title: 'Sincan Fatih’te Eski Evlerde Priz ve Anahtar: Basit Değişim mi, Hat Sorunu mu?',
+    description:
+      'Sincan Fatih Mahallesi’ndeki eski evlerde sallanan priz, çıtırtı yapan anahtar ve kararmış kapak ne anlatır? Ne zaman sadece değişim, ne zaman hat onarımı gerekir? Mr Volt: 0506 254 76 78.',
+    keyword: 'Sincan Fatih elektrikçi',
+    date: '2026-10-09',
+    readingMin: 5,
+    excerpt:
+      'Fatih’te eski bir evde priz sallanıyor, anahtara basınca çıtırtı geliyor. Çoğu zaman yarım saatlik bir değişim; ama bazen kapağın arkasında daha büyük bir hikaye var. Farkı nasıl anladığımızı anlattık.',
+    intro:
+      'Sincan Fatih Mahallesi’nde bahçeli müstakil evler ve yıllar önce yapılmış toplu konutlar var. Bu evlerden gelen çağrıların önemli kısmı büyük arızalar değil, küçük ama can sıkıcı şeyler: duvarda sallanan bir priz, basınca çıtırdayan bir anahtar, kapağı kararmış bir mutfak prizi. Ev sahipleri genelde “sadece değiştirelim” diyor. Çoğu zaman haklılar. Ama yirmi sekiz yıllık tecrübemizle söyleyebiliriz ki, bazen o küçük belirti kapağın arkasındaki yorgun bir hattın ilk işaretidir.',
+    sections: [
+      {
+        h: 'Sallanan priz neden tehlikeli?',
+        p: [
+          'Sallanan priz, duvardaki kasaya düzgün oturmamış ya da vidaları boşalmış prizdir. Fişi her takıp çıkardığınızda içerideki kablo uçları da oynar. Uç oynadıkça bağlantı gevşer, gevşek bağlantı ısınır.',
+          'Fatih’teki eski evlerde kasa çoğu zaman yıllar içinde kırılmış ya da sıva dökülmüş oluyor. Prizi yeniden sabitlemek için önce kasayı onarıyoruz; aksi halde yeni priz de birkaç ayda yine sallanır.',
+        ],
+      },
+      {
+        h: 'Anahtara basınca çıtırtı geliyorsa ne demek?',
+        p: [
+          'Çıtırtı, anahtarın içinde ya da arkasındaki bağlantıda küçük bir ark oluştuğunu gösterir. Anahtarın kontakları aşınmış olabilir, bu durumda değişim yeterlidir. Ama ses anahtara dokunmadan da geliyorsa ya da lamba titriyorsa sorun bağlantı uçlarındadır.',
+          'Bu sesi alışkanlık haline getirmeyin. Geçen kış Fatih’te bir evde koridor anahtarının çıtırtısına aylarca alışılmıştı. Kapağı açtığımızda arkadaki kablonun yalıtımı kömürleşmişti. Değişim yerine o noktadaki hattı yeniledik.',
+        ],
+      },
+      {
+        h: 'Kapağı açınca neye bakıyoruz?',
+        p: [
+          'Bir prizi ya da anahtarı söktüğümüzde ilk baktığımız şey kablo uçlarıdır. Uçlar parlak ve yalıtım esnekse sadece priz ya da anahtar değişir, iş yarım saatte biter. Uçlar kararmış, yalıtım sertleşip kırılıyorsa ucu kesip temiz bakırdan yeniden bağlarız.',
+          'Kablo duvarın içinde de sertleşmiş, eğince çatlıyorsa iş değişir. Bu, hattın yıllarca ısındığını gösterir ve o hattın tamamen yenilenmesi gerekir. Bunu kapağı açmadan bilmek mümkün değil; bu yüzden telefonda “sadece priz değişimi” diye kesin fiyat vermiyoruz, önce bakıyoruz.',
+        ],
+      },
+      {
+        h: 'Eski evlerde topraksız priz meselesi',
+        p: [
+          'Fatih’teki eski evlerin bir kısmında prizlerde toprak hattı yok. Priz yeni görünse bile arkasında sadece iki kablo bağlı olabilir. Çamaşır makinesi, fırın ve şofben gibi metal gövdeli cihazlarda bu bir güvenlik açığıdır.',
+          'Prizi değiştirirken toprak hattı olup olmadığını ölçüyoruz. Hat yoksa bunu size söylüyor, en azından ıslak hacimlerdeki ve metal gövdeli cihazların prizleri için çözüm öneriyoruz. Topraksız bir hatta topraklı priz takmak, prizi güvenli yapmaz; bunu bilmek önemli.',
+        ],
+      },
+      {
+        h: 'Ne zaman değişim, ne zaman hat onarımı?',
+        p: [
+          'Kısaca şöyle ayırıyoruz: tek bir prizde ya da anahtarda sorun var, kablo uçları sağlamsa değişim yeterli. Aynı odada birkaç noktada ısınma, kararma ya da çıtırtı varsa sorun o hattın kendisindedir. Bütün evde benzer belirtiler varsa tesisatın genel durumuna bakmak gerekir.',
+          'Mr Volt olarak Sincan Fatih dahil Ankara genelinde aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Önce kapağı açıp gösteriyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Sallanan prizi kendim sıkabilir miyim?',
+        a: 'Sigortayı indirmeden prize müdahale etmeyin. Kasa kırıksa vida sıkmak çözmez, priz birkaç ayda yine sallanır. Bakmamız daha doğru olur.',
+      },
+      {
+        q: 'Anahtar ısınıyor, tehlikeli mi?',
+        a: 'Evet, ısınan anahtar arkasında gevşek bir bağlantı olduğunu gösterir. O lambayı kullanmayın, sigortasını indirin ve bizi arayın.',
+      },
+      {
+        q: 'Sincan Fatih’e ne kadar sürede geliyorsunuz?',
+        a: 'Sincan’a aynı gün geliyoruz. Aradığınızda o anki konumumuza göre net süre söylüyoruz.',
+      },
+      {
+        q: 'Bütün prizleri değiştirmek tesisatı yenilemek demek mi?',
+        a: 'Hayır. Priz değişimi sadece uçtaki parçayı yeniler. Duvar içindeki kablo yorgunsa sorun devam eder; ikisini ayırmak için hattı ölçüp bakmak gerekir.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan' },
+      { label: 'Priz ve Anahtar', href: '/hizmetler/priz-anahtar' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+      { label: 'Priz Isınması ve Nötr Hattı Kopması', href: '/rehber/priz-isinmasi-notr-hatti-kopmasi-yenimahalle' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
