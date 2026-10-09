@@ -6,6 +6,7 @@ import FAQAccordion from '@components/FAQAccordion.astro';
 import CTASection from '@components/CTASection.astro';
 import { site } from '@data/site';
 import { posts, getPost } from '@data/blog';
+import { bolgeBul } from '@data/bolgeler';
 
 export function getStaticPaths() {
   return posts.map((p) => ({ params: { slug: p.slug } }));
@@ -14,6 +15,8 @@ export function getStaticPaths() {
 const { slug } = Astro.params;
 const post = getPost(slug!)!;
 const others = posts.filter((p) => p.slug !== post.slug).slice(0, 2);
+/* Yazının bölgesi başlıktan bulunur; arama ifadeleri bloğu bu adla üretilir */
+const bolgeAdi = bolgeBul(post.title);
 
 const fmtDate = (d: string) => {
   const [y, m, day] = d.split('-');
@@ -49,7 +52,7 @@ const faqSchema = {
 };
 ---
 
-<BaseLayout title={`${post.title} | Mr Volt`} description={post.description} path={`/rehber/${post.slug}`} schemas={[articleSchema, faqSchema]}>
+<BaseLayout title={`${post.title} | Mr Volt`} description={post.description} path={`/rehber/${post.slug}`} schemas={[articleSchema, faqSchema]} seoArea={bolgeAdi}>
   <PageHero
     eyebrow="Rehber"
     title={post.title}

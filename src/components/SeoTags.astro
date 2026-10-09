@@ -12,6 +12,8 @@ interface Props {
   /** Blok başlığı */
   heading?: string;
 }
+import { yakinBolgeler } from '@data/bolgeler';
+
 const { area = 'Ankara', extra = [], heading } = Astro.props;
 
 const isAnkara = area === 'Ankara';
@@ -59,7 +61,14 @@ const ankaraKombin = isAnkara
       `Ankara ${area} Acil Elektrikçi`,
     ];
 
-const terms = [...genel, ...isler, ...ankaraKombin, ...extra];
+const yakinKombin = isAnkara
+  ? ['Sincan Elektrik Ustası', 'Yenikent Elektrik Ustası', 'Törekent Elektrik Ustası', 'Etimesgut Elektrik Ustası', 'Eryaman Elektrik Ustası']
+  : [];
+
+const terms = [...new Set([...genel, ...isler, ...ankaraKombin, ...yakinKombin, ...extra])];
+
+/* Sincan ve komşu Etimesgut: sayfası olan bölgeler kendi sayfasına bağlanır */
+const bolgeler = yakinBolgeler.filter((b) => b.name !== area);
 ---
 
 <section class="seotags" aria-labelledby="seotags-h">
@@ -67,6 +76,12 @@ const terms = [...genel, ...isler, ...ankaraKombin, ...extra];
     <h2 class="seotags__h" id="seotags-h">{heading ?? `${area} elektrikçi için sık aranan ifadeler`}</h2>
     <ul class="seotags__list">
       {terms.map((t) => <li>{t}</li>)}
+    </ul>
+    <h2 class="seotags__h seotags__h--sub">Sincan ve Etimesgut’ta hizmet verdiğimiz bölgeler</h2>
+    <ul class="seotags__list">
+      {bolgeler.map((b) => (
+        <li>{b.href ? <a href={b.href}>{b.name} Elektrikçi</a> : `${b.name} Elektrikçi`}</li>
+      ))}
     </ul>
   </div>
 </section>
@@ -104,6 +119,13 @@ const terms = [...genel, ...isler, ...ankaraKombin, ...extra];
     border-radius: 999px;
     padding: 0.3rem 0.72rem;
     transition: color 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
+  }
+  .seotags__h--sub {
+    margin-top: 1.3rem;
+  }
+  .seotags__list a {
+    color: inherit;
+    text-decoration: none;
   }
   .seotags__list li:hover {
     color: var(--volt);
