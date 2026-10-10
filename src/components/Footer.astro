@@ -23,6 +23,7 @@ const footerDistricts = districts.slice(0, 8);
           <a href={site.phone.href} class="btn btn--spark"><Icon name="phone" size={18} /> {site.phone.display}</a>
           <a href={site.whatsapp.href} class="btn btn--ghost" target="_blank" rel="noopener"><Icon name="whatsapp" size={18} /> WhatsApp</a>
         </div>
+        <p class="ft__phone2">Telefon: <span>{site.phone2.display}</span></p>
       </div>
 
       <nav class="ft__col" aria-label="Hizmetler">
@@ -94,6 +95,15 @@ const footerDistricts = districts.slice(0, 8);
     flex-wrap: wrap;
     gap: 0.6rem;
     margin-top: 1.4rem;
+  }
+  .ft__phone2 {
+    margin-top: 1rem;
+    color: var(--on-dark-muted);
+    font-size: var(--fs-sm);
+  }
+  .ft__phone2 span {
+    color: #fff;
+    font-weight: 600;
   }
   .ft__col h3 {
     font-size: var(--fs-sm);

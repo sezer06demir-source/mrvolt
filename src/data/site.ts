@@ -21,6 +21,12 @@ export const site = {
     international: '+90 506 254 76 78',
   },
 
+  // Google Ads arama öğesi numarası; her sayfanın footer'ında düz metin olarak görünür.
+  phone2: {
+    display: '0506 092 58 16',
+    e164: '+905060925816',
+  },
+
   whatsapp: {
     number: '905062547678',
     message: "Merhaba, Ankara'da elektrik arızam var. Yardımcı olabilir misiniz?",
