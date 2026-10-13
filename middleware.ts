@@ -327,6 +327,17 @@ export default async function middleware(req: Request): Promise<Response | undef
     return deny(404, 'Not found');
   }
 
+  //    İyi-bot kontrolünden önce: PageSpeed/Lighthouse da bu adresi çağırır, 404 alırsa konsol hatası sayar.
+  if (path === '/api/ip') {
+    const apiCountry = getCountry(req, cf);
+    const names: Record<string, string> = { TR: 'Türkiye', DZ: 'Cezayir' };
+    const body = JSON.stringify({ ip: ip || null, country: apiCountry ?? null, countryName: apiCountry ? (names[apiCountry] ?? apiCountry) : null });
+    return new Response(body, {
+      status: 200,
+      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
+    });
+  }
+
   const isGoodBot = GOOD_BOTS.some((b) => ua.includes(b));
   if (isGoodBot) return undefined;
 
@@ -339,14 +350,6 @@ export default async function middleware(req: Request): Promise<Response | undef
     return deny(403, 'Bu site yalnızca hizmet verdiğimiz bölgelerden erişime açıktır.');
   }
 
-  if (path === '/api/ip') {
-    const names: Record<string, string> = { TR: 'Türkiye', DZ: 'Cezayir' };
-    const body = JSON.stringify({ ip: ip || null, country: country ?? null, countryName: country ? (names[country] ?? country) : null });
-    return new Response(body, {
-      status: 200,
-      headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store, private', 'x-robots-tag': 'noindex' },
-    });
-  }
 
   if (FIGHT_MODE && req.method === 'GET') {
     const token = await challengeToken();
