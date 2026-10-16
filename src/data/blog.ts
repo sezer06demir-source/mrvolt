@@ -476,6 +476,168 @@ export const posts: BlogPost[] = [
       { label: 'Priz Isınması ve Nötr Hattı Kopması', href: '/rehber/priz-isinmasi-notr-hatti-kopmasi-yenimahalle' },
     ],
   },
+  {
+    slug: 'etimesgut-yatak-odasi-cocuk-odasi-aydinlatma',
+    title: 'Etimesgut’ta Yatak Odası ve Çocuk Odası Aydınlatması: Spot, Okuma Lambası, Dimmer',
+    description:
+      'Etimesgut’ta yatak odası ve çocuk odası için doğru aydınlatma: tavan lambası mı spot mu, yatak başı okuma lambası, vaviyen anahtar, dimmer ve ışık rengi. Mr Volt: 0506 254 76 78.',
+    keyword: 'Etimesgut elektrikçi',
+    date: '2026-10-16',
+    readingMin: 5,
+    excerpt:
+      'Yatak odasında en sık duyduğumuz şikayet: “Yatınca ışığı kapatmak için kalkmak zorunda kalıyorum.” Çocuk odasında ise ışığın ya çok parlak ya da çok sönük olması. Etimesgut’ta bu odaları nasıl aydınlattığımızı anlattık.',
+    intro:
+      'Etimesgut’ta yatak odası aydınlatması için çağrıldığımızda çoğu zaman tavanın ortasında tek bir lamba ve kapının yanında tek bir anahtar görüyoruz. Yatmadan önce kitap okuyan, gece kalkan, bebeğini emziren biri için bu düzen yetmiyor. Yirmi sekiz yıldır ev aydınlatması yapıyoruz; yatak odası ve çocuk odası, evin en çok “katman” isteyen odaları. Yani tek ışık değil, ihtiyaca göre yanan birkaç ışık. Nasıl kurduğumuzu anlatalım.',
+    sections: [
+      {
+        h: 'Yatak odasında tavan lambası yeterli mi?',
+        p: [
+          'Genelde yeterli değil. Tavan lambası odayı toplarken, giyinirken işe yarar ama yatakta okurken ya da gece kalkarken göz alır. Yatak odasında üç ışık öneriyoruz: genel tavan ışığı, yatak başında okuma lambası ve gece için düşük bir ışık.',
+          'Tavan ışığında spot isteyenler artıyor. Yatak odasında spotları yatağın tam üstüne değil, dolap önüne ve oda kenarlarına diziyoruz. Yatarken tavana bakınca gözünüze spot vurmasın.',
+        ],
+      },
+      {
+        h: 'Yataktan kalkmadan ışığı kapatmak için ne yapılır?',
+        p: [
+          'Vaviyen bağlantı. Tavan lambasını hem kapının yanından hem yatak başından açıp kapatabildiğiniz bir anahtar düzeni. Kapı yanındaki anahtardan yatak başına ek bir hat çekiyoruz; yatağın iki yanına ayrı ayrı da yapılabiliyor.',
+          'Bu işi boya ve badana öncesinde yapmak en temizi. Badanası yeni bir odada da yapılır; kabloyu süpürgelik ya da kanal içinden götürerek kırımı en aza indiriyoruz.',
+        ],
+      },
+      {
+        h: 'Yatak başı okuma lambası nasıl olmalı?',
+        p: [
+          'Okuma lambası ışığı kitaba vermeli, yanınızda yatanın yüzüne değil. Bu yüzden yönlendirilebilir duvar aplikleri ya da dar açılı küçük spotlar öneriyoruz. Her iki taraf kendi anahtarından yakmalı.',
+          'Apliklerin yeri yatak başlığına göre belirlenir. Yatak gelmeden aplik yeri açılırsa sonra başlıkla çakışabiliyor. Yatağın ölçüsünü ve yerini önceden bilmek işimizi kolaylaştırıyor.',
+        ],
+      },
+      {
+        h: 'Dimmer ve ışık rengi',
+        p: [
+          'Yatak odası ve çocuk odasında dimmer, yani ışığı kısabilen anahtar çok işe yarar. Akşam saatlerinde ışığı kısmak uykuya geçişi kolaylaştırır. Ama LED lambalar her dimmerle uyumlu değil; hem lambanın hem dimmerin LED için uygun olduğundan emin oluyoruz, yoksa ışık titrer.',
+          'Bu odalarda sıcak beyaz, 2700–3000K öneriyoruz. Beyaz ve soğuk ışık akşam saatlerinde göz yorar ve uykuyu kaçırır.',
+        ],
+      },
+      {
+        h: 'Çocuk odasında nelere dikkat ediyoruz?',
+        p: [
+          'Çocuk odasında güvenlik önce gelir. Prizler çocuk korumalı, yani kapaklı ya da perdeli olmalı. Yere yakın prizlere gece lambası takılacaksa ısınmayan, sağlam bir model seçilmeli. Masa lambası ve oyuncak şarjları için masanın yanına yeterli priz koyuyoruz ki uzatma kablosu dolaşmasın.',
+          'Gece ışığını çocuğun yüzüne vurmayacak bir noktaya, yerden alçak bir yere koyuyoruz. Tavan ışığı ise dimmerli olursa hem oyun saatinde hem uyku saatinde aynı lamba iş görür.',
+        ],
+      },
+      {
+        h: 'Etimesgut’ta nasıl çalışıyoruz?',
+        p: [
+          'Odayı görüp yatak, dolap ve masanın yerine göre ışık noktalarını sizinle birlikte belirliyoruz. Mevcut anahtar ve buat yerlerinden yararlanarak kırımı en aza indiriyoruz.',
+          'Mr Volt olarak Etimesgut dahil Ankara genelinde aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yatak başına anahtar eklemek için duvar kırmak gerekir mi?',
+        a: 'Çoğu zaman az bir kırım ya da süpürgelik ve kanal içinden geçişle çözülüyor. Boya öncesi yapılırsa iz hiç kalmıyor.',
+      },
+      {
+        q: 'LED lamba dimmerle titriyor, neden?',
+        a: 'Lamba ya da dimmer LED uyumlu değildir. Kutusunda kısılabilir yazan LED ve LED uyumlu dimmer birlikte kullanılmalı.',
+      },
+      {
+        q: 'Çocuk odasına hangi priz takılmalı?',
+        a: 'Çocuk korumalı, perdeli ya da kapaklı prizler. Özellikle yere yakın prizlerde bunu mutlaka öneriyoruz.',
+      },
+      {
+        q: 'Etimesgut’a ne kadar sürede geliyorsunuz?',
+        a: 'Aynı gün geliyoruz. Aradığınızda o anki konumumuza göre net süre söylüyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Etimesgut Elektrikçi', href: '/hizmet-bolgeleri/etimesgut' },
+      { label: 'Aydınlatma ve Avize', href: '/hizmetler/aydinlatma-avize' },
+      { label: 'Priz ve Anahtar', href: '/hizmetler/priz-anahtar' },
+      { label: "Keçiören'de Avize ve Spot Montajı", href: '/rehber/avize-spot-montaji-kecioren-eski-bina' },
+    ],
+  },
+  {
+    slug: 'sincan-asma-tavan-kartonpiyer-gizli-serit-led',
+    title: 'Sincan’da Asma Tavan ve Kartonpiyerde Gizli Şerit LED: Noktalanma, Isı ve Doğru Döşeme',
+    description:
+      'Sincan’da asma tavan ve kartonpiyer içine gizli şerit LED döşerken ışığın noktalanması, ısınma, köşe dönüşleri ve sürücü yeri. Usta anlatımıyla. Mr Volt: 0506 254 76 78.',
+    keyword: 'Sincan elektrikçi',
+    date: '2026-10-16',
+    readingMin: 5,
+    excerpt:
+      'Kartonpiyerin içinden tavana vuran gizli LED, salonu bir anda değiştiriyor. Ama ışık nokta nokta görünüyorsa, köşelerde kararıyorsa ya da bir yıl dolmadan sönmeye başlıyorsa döşeme yanlış yapılmıştır. Sincan’da nasıl yaptığımızı anlattık.',
+    intro:
+      'Sincan’da salon ve yatak odası yenileyenlerin en çok istediği şeylerden biri gizli tavan aydınlatması. Kartonpiyerin ya da asma tavanın kenarındaki boşluktan tavana yansıyan yumuşak bir ışık. Doğru yapılınca çok güzel duruyor. Yanlış yapılınca da tavanda nokta nokta ışık lekeleri, köşelerde karanlık boşluklar ve birkaç ay sonra sönen parçalar çıkıyor. Yirmi sekiz yıllık tecrübemizle bu işin nerede bozulduğunu anlatalım.',
+    sections: [
+      {
+        h: 'Gizli LED’de ışık neden nokta nokta görünür?',
+        p: [
+          'İki sebebi var: şeritteki LED’lerin seyrek olması ve şeridin tavana çok yakın durması. Metre başına az LED olan ucuz şeritlerde her LED ayrı bir nokta olarak görünür. Şerit tavana ya da kartonpiyerin iç yüzeyine çok yakınsa ışığın yayılacak mesafesi kalmaz.',
+          'Biz gizli aydınlatmada sık dizilimli ya da COB tipi şerit kullanıyoruz. COB şeritte ışık tek bir çizgi gibi görünür, noktalanma olmaz. Şeridi de tavana doğrudan değil, açılı bir profile ya da kartonpiyerin içinde tavandan biraz uzağa yerleştiriyoruz.',
+        ],
+      },
+      {
+        h: 'Şerit LED neden erken söner?',
+        p: [
+          'Isı. Kartonpiyerin içi kapalı ve havasız bir alan. Şerit doğrudan alçıya yapıştırılırsa ısısını atamaz, LED’ler birer birer kararır. Alüminyum profil burada ısı dağıtıcı görevi görüyor, ömrü ciddi şekilde uzatıyor.',
+          'İkinci sebep sürücü. Gücü şeride göre az seçilmiş bir sürücü sürekli sınırda çalışır ve ısınır. Mamak’ta anlattığımız sürücü hesabı burada da geçerli: şeridin toplam çekişi hesaplanır, üstüne pay bırakılır.',
+        ],
+      },
+      {
+        h: 'Köşelerde ışık neden kopar?',
+        p: [
+          'Şerit köşede keskin bükülürse ya kırılır ya da köşede LED kalmaz, ışık kopar. Köşe dönüşlerini şeridi kesip ek kablo ya da köşe konnektörüyle yapıyoruz. Ek yerleri lehimli ve sağlam olmalı; geçmeli ucuz konnektörler zamanla temassızlık yapar ve şeridin bir kısmı söner.',
+          'Uzun salonlarda şeridi tek uçtan beslemek de sona doğru ışığın azalmasına yol açar. 24 voltluk şerit kullanıyor, gerekirse şeridi birkaç noktadan besliyoruz.',
+        ],
+      },
+      {
+        h: 'Sürücü nereye konur?',
+        p: [
+          'Sürücü değişebilir bir parçadır, bu yüzden kapalı bir alçının içine gömülmez. Asma tavanda bir servis kapağı açıyor ya da sürücüyü yakındaki bir dolabın içine koyuyoruz. Böylece yıllar sonra sürücü değişecekse tavanı kırmak gerekmiyor.',
+          'Kartonpiyer yapılacaksa bizi ustası çalışmaya başlamadan çağırmanız en doğrusu. Kablo ve sürücü yeri kartonpiyer kapanmadan hazır olursa iş hem temiz hem hızlı oluyor.',
+        ],
+      },
+      {
+        h: 'Renk ve kumanda seçimi',
+        p: [
+          'Gizli tavan aydınlatmasında sıcak beyaz, 3000K civarı en çok tercih edilen ve en dinlendirici olanı. Renk değiştiren RGB şerit isteyenler de oluyor; o zaman ayrı bir kumanda modülü ve uygun sürücü gerekiyor.',
+          'Gizli LED’i tavan avizesinden ayrı bir anahtara bağlıyoruz. Akşam sadece gizli ışıkla oturmak, bu aydınlatmanın en çok kullanılan hali. Kısılabilir olsun isteniyorsa şerit LED’e uygun dimmer ekliyoruz.',
+        ],
+      },
+      {
+        h: 'Sincan’da nasıl çalışıyoruz?',
+        p: [
+          'Salonu görüp kartonpiyer ya da asma tavan planına göre şerit tipini, sürücü yerini ve kablo güzergahını belirliyoruz. Tavan ustasıyla aynı gün çalışabiliyoruz.',
+          'Mr Volt olarak Sincan’ın tüm mahallelerine ve Ankara geneline aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Gizli LED’de ışık nokta nokta görünüyor, düzelir mi?',
+        a: 'Şerit seyrek dizilimliyse ya da tavana çok yakınsa düzelmez. Sık dizilimli veya COB şerit ve doğru profille yeniden döşemek gerekir.',
+      },
+      {
+        q: 'Kartonpiyer yapıldıktan sonra LED döşenebilir mi?',
+        a: 'Kartonpiyerin içinde şerit için boşluk bırakıldıysa evet. Sürücü ve kablo için yine de ulaşılabilir bir nokta gerekir; yerinde bakıp söylüyoruz.',
+      },
+      {
+        q: 'Şeridin bir bölümü söndü, tamamı mı değişmeli?',
+        a: 'Çoğu zaman hayır. Sönen bölüm kesilip yenisiyle değiştirilebilir. Ama sorun ısı ya da sürücüyse onu da çözmeden yapılan değişim kısa sürede tekrar eder.',
+      },
+      {
+        q: 'Sincan’a aynı gün gelir misiniz?',
+        a: 'Evet. Sincan’ın tüm mahallelerine aynı gün geliyoruz; montaj işlerini tavan ustasıyla birlikte planlayabiliyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan' },
+      { label: 'Aydınlatma ve Avize', href: '/hizmetler/aydinlatma-avize' },
+      { label: 'Elektrik Tesisatı', href: '/hizmetler/elektrik-tesisati' },
+      { label: "Mamak'ta Şerit LED ve Spot: Sürücü Seçimi", href: '/rehber/serit-led-spot-aydinlatma-mamak' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
