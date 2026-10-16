@@ -638,6 +638,80 @@ export const posts: BlogPost[] = [
       { label: "Mamak'ta Şerit LED ve Spot: Sürücü Seçimi", href: '/rehber/serit-led-spot-aydinlatma-mamak' },
     ],
   },
+  {
+    slug: 'batikent-elektrik-faturasi-yukselten-kacaklar',
+    title: 'Batıkent’te Elektrik Faturası Neden Birden Yükselir? Görünmeyen Kaçaklar',
+    description:
+      'Batıkent’te kullanım değişmediği halde fatura artıyorsa sebebi genelde küçük ama sürekli bir elektrik kaçağıdır. Hangi cihazlar, hangi hatlar sayacı boşuna döndürür? Mr Volt: 0506 254 76 78.',
+    keyword: 'Batıkent elektrikçi',
+    date: '2026-10-16',
+    readingMin: 5,
+    excerpt:
+      'Evde yaşam tarzı değişmediği halde fatura iki ay üst üste artmışsa, çoğu zaman gözle görülmeyen küçük bir kaçak sayacı fazladan döndürüyordur. Batıkent’te bu tip çağrılarda neye baktığımızı anlattık.',
+    intro:
+      'Batıkent’te “geçen ay aynı şeyleri kullandık, fatura yine de arttı” diye arayan epey müşterimiz oluyor. Kaçak akım rölesi atmıyorsa insan içini rahat tutuyor ama röle atmaması kaçak yok demek değildir; küçük bir kaçak röleyi tetiklemeden de sayacı döndürmeye devam edebilir. Yirmi sekiz yıldır bu işi yapan biri olarak söyleyeyim: fatura artışının arkasında çoğu zaman tek bir büyük arıza değil, fark edilmeyen küçük bir sürekli tüketim vardır.',
+    sections: [
+      {
+        h: 'Röle atmıyor ama yine de kaçak olabilir mi?',
+        p: [
+          'Evet, olabilir. Ev tipi kaçak akım rölesi genelde 30 miliamperin üstündeki farkı yakalar. Bundan daha küçük, örneğin birkaç miliamperlik sabit bir kaçak röleyi hiç tetiklemez ama yirmi dört saat kesintisiz çalışır ve ay sonunda sayaca ciddi bir fark olarak yansır.',
+          'Batıkent’teki eski sitelerde bodrum kolon hattında ya da dış cepheye yakın nemli bir borunun içinden geçen kabloda bunun gibi küçük ve sabit kaçaklara sık rastlıyoruz. Röle sessiz kalınca kimse şüphelenmiyor, oysa pens ampermetreyle baktığımızda hat hiç boşta değil.',
+        ],
+      },
+      {
+        h: 'Sayacı en çok hangi cihazlar boşuna döndürür?',
+        p: [
+          'En başta eskimiş su ısıtıcıları ve şofbenler gelir; içindeki rezistans gövdeye temas etmeye başladığında hem küçük bir kaçak hem de gereksiz bir ısı kaybı oluşur, cihaz suyu ısıtmak için normalden uzun çalışır. İkinci sırada eski buzdolapları var; kompresörü yorgun bir buzdolabı günün büyük kısmında çalışır durumda kalır ve bunu kimse fark etmez çünkü ses hafiftir.',
+          'Üçüncü sırada ise kullanılmadığı halde prizde unutulan şarj cihazları, eski tip trafolu cihazlar ve bekleme modunda sürekli güç çeken eski televizyon-uydu alıcısı ikilileri geliyor. Tek başına küçük görünse de Batıkent’teki bir dairede dört beş böyle cihaz toplandığında ay sonunda fark edilir bir tutara dönüşüyor.',
+        ],
+      },
+      {
+        h: 'Kaçağı kendiniz nasıl fark edersiniz?',
+        p: [
+          'En basit yöntem şu: evdeki bütün cihazları kapatıp prizden çekin, sayacın diskini ya da dijital göstergesini izleyin. Hiçbir şey çalışmıyorken sayaç hâlâ hareket ediyorsa, bir yerde sürekli bir tüketim ya da kaçak var demektir. Sonra sigortaları tek tek kaldırıp hangi hatta sayaç durduğunu görerek şüpheyi daraltabilirsiniz.',
+          'Bodrum katı, kolon hattı ya da dış aydınlatma gibi ortak kullanılan hatlarda bu testi apartman yönetimiyle birlikte yapmak gerekebilir; tek daireye ait olmayan bir kaçak bazen tüm binanın ortak gider faturasına yansıyor.',
+        ],
+      },
+      {
+        h: 'Eski tesisatın faturaya etkisi',
+        p: [
+          'Batıkent’in yetmişli seksenli yıllarda yapılmış bloklarında kablo yalıtımı yıllar içinde sertleşip çatlıyor; görünürde bir arıza yokmuş gibi dursa da bu tip yorgun yalıtımdan küçük sızıntı akımları geçebilir. Ayrıca gevşemiş bir klemens ya da nemli bir buat da benzer şekilde sürekli küçük bir kayba yol açar; bu kayıp ısı olarak değil doğrudan tüketim olarak sayaca yansır.',
+          'Bu yüzden fatura artışında ilk bakılacak yer sadece cihazlar değil, panonun ve ana hatların genel durumudur. Ölçüm yapmadan “şu cihaz içiyordur” demek çoğu zaman yanıltıcı olur.',
+        ],
+      },
+      {
+        h: 'Batıkent’te bu tür çağrılarda ne yapıyoruz?',
+        p: [
+          'Önce sayacı ve panoyu birlikte izleyerek genel bir kaçak var mı yok mu belirliyoruz. Varsa hatları tek tek ayırıp pens ampermetreyle hangi grupta olduğunu buluyoruz; sonra o gruptaki cihazları ve bağlantı noktalarını kontrol ediyoruz. Kaynak bir cihazsa söylüyoruz, bir hatsa o bölümü onarıp yeniden ölçerek kaçağın bittiğini gösteriyoruz.',
+          'Mr Volt olarak Batıkent dahil Yenimahalle’nin tüm mahallelerine ve Ankara geneline aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Önce ölçüyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Kaçak akım rölem hiç atmıyor, yine de kaçak olabilir mi?',
+        a: 'Evet. Röle genelde 30 mA üstü farkı yakalar; bundan küçük sabit bir kaçak röleyi tetiklemeden sayacı sürekli döndürebilir.',
+      },
+      {
+        q: 'Fatura artışının kaçaktan mı yoksa cihazdan mı geldiğini nasıl anlarım?',
+        a: 'Tüm cihazları kapatıp sayacı izleyin. Hiçbir şey çalışmazken sayaç hareket ediyorsa bir yerde sürekli bir tüketim ya da kaçak vardır.',
+      },
+      {
+        q: 'Eski buzdolabı gerçekten faturayı bu kadar etkiler mi?',
+        a: 'Yorgun bir kompresör günün büyük kısmında çalışır durumda kalabilir. Tek başına küçük gibi dursa da ay sonunda fark edilir bir tutara dönüşür.',
+      },
+      {
+        q: 'Batıkent’e ne zaman gelebilirsiniz?',
+        a: 'Aynı gün geliyoruz. Aradığınızda o anki konumumuza göre net süre söylüyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Yenimahalle Elektrikçi', href: '/hizmet-bolgeleri/yenimahalle' },
+      { label: 'Kaçak Akım Rölesi hizmeti', href: '/hizmetler/kacak-akim-rolesi' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: 'Priz Isınması ve Nötr Hattı Kopması', href: '/rehber/priz-isinmasi-notr-hatti-kopmasi-yenimahalle' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
