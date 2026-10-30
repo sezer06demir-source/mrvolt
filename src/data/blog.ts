@@ -712,6 +712,80 @@ export const posts: BlogPost[] = [
       { label: 'Priz Isınması ve Nötr Hattı Kopması', href: '/rehber/priz-isinmasi-notr-hatti-kopmasi-yenimahalle' },
     ],
   },
+  {
+    slug: 'cankaya-ana-salter-arizasi-elektriksiz-kalma',
+    title: 'Çankaya’da Ana Şalter Arızası: Tüm Daire Neden Birden Elektriksiz Kalır?',
+    description:
+      'Çankaya’da dairenin tüm sigortaları kalkıkken elektrik yoksa sorun genelde ana şalterdedir. Ana şalterle kendi panonuz arasındaki fark ve doğru çözüm. Mr Volt: 0506 254 76 78.',
+    keyword: 'Çankaya elektrikçi',
+    date: '2026-10-30',
+    readingMin: 5,
+    excerpt:
+      'Kendi panonuzdaki sigortaların hepsi kalkık ama elektrik yine yoksa, aranan arıza genelde kendi tesisatınızda değil, dairenin ya da katın beslendiği ana şalterdedir. Çankaya’dan sahadan anlattık.',
+    intro:
+      'Çankaya’da aldığımız çağrıların bir kısmı tek bir prizle ilgili değil, dairenin tamamıyla ilgili oluyor: ışık, buzdolabı, kombi, hepsi birden gidiyor. Ev sahibi önce kendi panosuna bakıyor, sigortaların hepsi kalkık görünüyor ama elektrik yine yok. Böyle durumlarda sorun çoğu zaman kendi sigortanızda değil, dairenin ya da katın beslendiği ana şalterdedir. Yıllardır bu tip çağrılara giden biri olarak ana şalterle kendi panonuzdaki sigortanın farkını ve bu arızada neyin yapılıp neyin yapılamayacağını anlatayım.',
+    sections: [
+      {
+        h: 'Ana şalter nedir, kendi sigortanızdan farkı ne?',
+        p: [
+          'Kendi panonuzdaki sigortalar (otomatlar) her biri bir hattı, örneğin mutfak prizlerini ya da salon aydınlatmasını korur. Ana şalter ise bunların hepsinden önce gelir; dairenin ya da bazı binalarda katın tüm yükünü taşıyan, genelde 25, 32 veya 40 amperlik daha büyük bir kesicidir. Siz kendi panonuzu görürsünüz ama ana şalter çoğu zaman kat koridorundaki ya da apartman girişindeki ortak panodadır.',
+          'Ana şalter attığında dairenizdeki hiçbir sigorta kalkmamış görünür, çünkü onlar hiç devreye giremez; akım zaten daha yukarıdan kesilmiştir. Komşunuzun ışıkları yanarken sizinkiler sönükse ve kendi panonuzda her şey normal duruyorsa, aranacak yer kendi tesisatınız değil, o ortak şalterdir.',
+        ],
+      },
+      {
+        h: 'Ana şalter neden atar?',
+        p: [
+          'En sık sebep aşırı yüktür. Kızılay ve Bahçelievler gibi eski yapılarda ana şalter, o dönemin ihtiyacına göre seçilmiştir; bugün klima, şofben ve fırın aynı anda çalıştığında dairenin toplam çekişi o eski kapasiteyi aşabilir. Her bir hat kendi sigortasında rahat görünse de toplamda ana şalterin sınırını zorlar ve o şalter atar.',
+          'İkinci sebep, şalterin kendi içindeki bir arızadır. Yıllar içinde kontak noktaları gevşer, temas yüzeyi küçülür ve orası ısınarak şalteri termik olarak attırır. Bazı ana şalterler kaçak akım korumasıyla birlikte gelir; bu tipte dairenin herhangi bir yerindeki küçük bir kaçak da ana şalteri attırabilir, bu yüzden "benim sigortam atmadı" demek kaçak olmadığı anlamına gelmez.',
+        ],
+      },
+      {
+        h: 'Mühürlü sigorta ile ana şalteri karıştırmayın',
+        p: [
+          'Sayaç girişindeki, üzerinde dağıtım şirketinin mührü bulunan sigortaya biz dokunamayız; onu açmak ya da değiştirmek dağıtım şirketinin işidir, mühür koparılırsa sorumluluk sizde kalır. Bu, kat ya da daire panosundaki ana şalterden ayrı bir şeydir; o ortak pano içindeki şalteri inceleyip gerekirse değiştirmek elektrikçinin görevidir.',
+          'Sahada bu ikisini ayırt edemeyen çok müşteri oluyor. Mühürlü sigorta sürekli atıyorsa önce dağıtım şirketine bildirmeniz gerekir; biz yine de o hattaki yükü ve kaçağı ölçüp sonucu size ve gerekirse ilgili şirkete net biçimde söyleriz.',
+        ],
+      },
+      {
+        h: 'Ana şalter arızasında ne yapıyoruz?',
+        p: [
+          'Önce dairenin toplam çekişini pens ampermetreyle ölçüyor, ana şalterin gerçekten kapasitesinin üstünde mi çalıştığını yoksa kendi içinde bir arıza mı olduğunu ayırıyoruz. Şalterin gövdesine ve bağlantı vidalarına dokunarak ısınma olup olmadığına, kontakların kararıp kararmadığına bakıyoruz; ısınmış bir şalter genelde kendini belli eder.',
+          'Sebep kapasite yetersizliğiyse yükü hatlar arasında yeniden dengeliyor ya da uygun amperli bir şalterle değiştirmeyi öneriyoruz; sebep şalterin kendi arızasıysa doğrudan değişim yapıp test ederek teslim ediyoruz. Ortak panoda yapılan her değişiklikte diğer dairelerin elektriğini kesmeden ilerlemeye özen gösteriyoruz.',
+        ],
+      },
+      {
+        h: 'Çankaya’da bu arızalarda nasıl çalışıyoruz?',
+        p: [
+          'Kızılay, Bahçelievler, Ayrancı, Dikmen ve Birlik tarafındaki eski apartmanlarda bu tip çağrılara sık gidiyoruz; ortak panonun nerede olduğunu, hangi dairelerin hangi şalterden beslendiğini genelde kapıcı ya da yönetici biliyor, önce onu öğreniyoruz. Ölçümü yapıp sonucu anlattıktan sonra, onayınızla işe başlıyoruz.',
+          'Mr Volt olarak Çankaya dahil Ankara genelinde aynı gün geliyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz. Önce ölçüyor, keşif sonrası net fiyatı söylüyor, onayınızla işe başlıyoruz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Ana şalter attı, kendim kaldırabilir miyim?',
+        a: 'Bir kez deneyebilirsiniz; tekrar atmıyorsa geçici bir yüklenmeydi. Kalktıktan kısa süre sonra yine atıyorsa zorlamayın, ölçüm yaptırmak gerekir.',
+      },
+      {
+        q: 'Mühürlü sigorta sürekli atıyorsa ne yapmalıyım?',
+        a: 'Mührü koparmadan dağıtım şirketine bildirmeniz gerekir. Biz hattı ölçüp sebebi netleştirip hem size hem gerekirse ilgili şirkete açık biçimde anlatabiliriz.',
+      },
+      {
+        q: 'Ana şalter ile kendi dairemdeki sigorta arasındaki fark ne?',
+        a: 'Kendi sigortanız tek bir hattı korur; ana şalter dairenin ya da katın tamamını besler ve ondan önce gelir. Ana şalter attığında kendi panonuzdaki sigortalar hiç devreye girmemiş görünür.',
+      },
+      {
+        q: 'Çankaya’ya ne kadar sürede gelebilirsiniz?',
+        a: 'Aynı gün geliyoruz. Aradığınızda o anki konumumuza göre net süre söylüyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Çankaya Elektrikçi', href: '/hizmet-bolgeleri/cankaya' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
