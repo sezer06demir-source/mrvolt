@@ -10,6 +10,7 @@ import Header from '@components/Header.astro';
 import SeoTags from '@components/SeoTags.astro';
 import Footer from '@components/Footer.astro';
 import MobileCallBar from '@components/MobileCallBar.astro';
+import AdVisitBeacon from '@components/AdVisitBeacon.astro';
 import { site } from '@data/site';
 
 interface Props {
@@ -175,5 +176,6 @@ const allSchemas = [websiteSchema, businessSchema, ...schemas];
         els.forEach((el) => el.classList.add('is-in'));
       }
     </script>
+    <AdVisitBeacon />
   </body>
 </html>
