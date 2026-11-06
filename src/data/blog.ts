@@ -786,6 +786,80 @@ export const posts: BlogPost[] = [
       { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
     ],
   },
+  {
+    slug: 'kahramankazan-jenerator-ups-kis-kesintisi',
+    title: 'Kahramankazan’da Kış Kesintilerinde Jeneratör mü, UPS mü? Doğru Seçim ve Güvenli Bağlantı',
+    description:
+      'Kahramankazan’da kış aylarında elektrik kesintisi uzarsa kombi, su pompası ve dondurucu için jeneratör mü UPS mü gerekir? Doğru seçim, güvenli bağlantı ve ATF şalteri. Mr Volt: 0506 254 76 78.',
+    keyword: 'Kahramankazan elektrikçi',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Kahramankazan’da şebeke kesintisi şehir merkezine göre daha sık ve daha uzun sürüyor. Kombinin pompası durduğunda, dondurucu saatlerce elektriksiz kaldığında jeneratör mü yoksa UPS mü işe yarar, sahadan anlattık.',
+    intro:
+      'Kazan merkez ve çevresindeki müşterilerimizden kışın en çok duyduğumuz şikâyet, kesintinin şehir içine göre daha uzun sürmesi. Kısa bir kesinti aydınlatma için sorun olmaz ama kombi pompasının durması, su tesisatının donması ya da dondurucudaki yiyeceğin bozulması gibi dertler büyütüyor. Bu yazıda jeneratör ile UPS’in nerede işe yaradığını ve bir eve ya da işyerine nasıl güvenle bağlandığını anlatıyoruz.',
+    sections: [
+      {
+        h: 'UPS mi, jeneratör mü: hangisi hangi işi görür?',
+        p: [
+          'UPS, kesinti anında saniyenin bir parçasında devreye giren ama sınırlı güç ve süre veren bir akü sistemidir; kombi kartı, modem, router ya da bir bilgisayarı birkaç dakika veya en fazla bir-iki saat ayakta tutar. Jeneratör ise yakıtla çalışan, çok daha yüksek güç verebilen ama devreye girene kadar birkaç saniye-dakika gecikmesi olan bir sistemdir; evin tamamını ya da ağır cihazları (su pompası, ısıtıcı, derin dondurucu) uzun süre besleyebilir.',
+          'Kazan merkez tarafında kısa ve sık kesintisi olan evlere genelde kombi ve modem için küçük bir UPS öneriyoruz; kesinti saatler sürüyorsa ya da su pompası, kuyu motoru gibi yüksek güçlü bir cihaz varsa UPS yetmez, jeneratör gerekir. İkisi birbirinin yerine geçmez, çoğu zaman ikisi bir arada en doğru çözüm oluyor.',
+        ],
+      },
+      {
+        h: 'Jeneratörü doğrudan prize takmak neden risklidir?',
+        p: [
+          'Jeneratörü uzatma kablosuyla prizden eve vermek hem sizi hem şebekeyi riske atar; şebeke geri geldiği anda jeneratörün ürettiği gerilimle şehir hattının gerilimi çakışabilir, bu da jeneratöre, evdeki cihazlara ya da hattı onarmaya çalışan bir ekibe zarar verebilir. Bunun doğru çözümü ATF (otomatik transfer şalteri) ya da el ile çevrilen bir geçiş şalteridir; bu şalter şebeke ile jeneratörü aynı anda hiçbir zaman panoya bağlamaz.',
+          'Fatih ve Çakırlar taraflarında kurulum yaptığımız evlerde panoya bu geçiş şalterini ekliyor, jeneratörün hangi hatları besleyeceğini (ısıtma, aydınlatma, pompa gibi öncelikli devreleri) birlikte belirliyoruz. Jeneratör evin tüm yükünü kaldıramayabileceği için öncelikli hatları ayırmak, kesinti anında gerçekten işinize yarayacak bir kurulum sağlar.',
+        ],
+      },
+      {
+        h: 'Jeneratörün topraklaması neden önemli?',
+        p: [
+          'Jeneratör de bir elektrik kaynağı olduğu için, tıpkı şebeke gibi doğru topraklanmalı ve mümkünse kaçak akım korumasından geçirilmelidir; topraksız çalışan bir jeneratör, bir arıza anında gövdesinde ya da beslediği cihazlarda tehlikeli gerilim bırakabilir. Saray tarafında bir müşterimizin kendi taktığı küçük jeneratörde bu eksikti, kontrol ettiğimizde gövdede kaçak voltaj ölçtük.',
+          'Kurulumda jeneratörün gövde topraklamasını binanın topraklamasına bağlıyor, ardından yükü vermeden önce ölçümle kontrol ediyoruz. Bu adımı atlamak, kesinti anında can güvenliğini riske atan en sık hatalardan biri.',
+        ],
+      },
+      {
+        h: 'Hangi cihazları önceliklendirmeli?',
+        p: [
+          'Bir evin tüm yükünü karşılayacak büyüklükte jeneratör almak hem maliyetli hem de genelde gereksizdir; kombi pompası, birkaç aydınlatma hattı, buzdolabı-dondurucu ve varsa su pompası öncelikli devreler olarak ayrılıp panoda ayrı bir hatta toplanabilir. Orhaniye tarafında bu şekilde kurduğumuz bir sistemde küçük bir jeneratör, kesinti boyunca evin gerçekten gerekli olan kısmını sorunsuz besliyor.',
+          'Elektronik kartı hassas olan kombiler için ayrıca küçük bir UPS eklemek, jeneratörün devreye girişindeki o kısa gecikmede kartın ani kapanıp açılmasını önler; bu iki katmanlı çözüm, kombiyi hem uzun kesintiye hem de ani geçişlere karşı korur.',
+        ],
+      },
+      {
+        h: 'Kahramankazan’da kurulumu nasıl yapıyoruz?',
+        p: [
+          'Önce evin ya da işyerinin hangi cihazları gerçekten öncelikli olduğunu sizinle netleştiriyor, mevcut panoyu ve topraklamayı kontrol ediyoruz. Ardından güce uygun geçiş şalterini (ATF ya da elle çevrilen tip) panoya ekliyor, jeneratörün topraklamasını ölçerek doğruluyor ve son olarak gerçek bir kesinti simülasyonuyla geçişi test ederek teslim ediyoruz.',
+          'Mr Volt olarak Kahramankazan’a kadar geliyor, yolun uzunluğu yüzünden işi tek seferde ve tam bitirmeye özen gösteriyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilir, önce ölçüp keşif sonrası net fiyatı söyleriz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Kahramankazan’da jeneratör kurulumuna geliyor musunuz?',
+        a: 'Evet, geliyoruz. Yol biraz uzun olduğu için randevuyu önceden netleştirip tek seferde tam kurulumu bitiriyoruz.',
+      },
+      {
+        q: 'Jeneratörü kendim prize takıp evi besleyebilir miyim?',
+        a: 'Önermiyoruz; şebeke geri geldiğinde gerilim çakışması cihazlara ve ekiplere zarar verebilir. Panoya ATF ya da el ile çevrilen geçiş şalteri eklemek doğru ve güvenli olan yöntemdir.',
+      },
+      {
+        q: 'Kombim için UPS mi jeneratör mü yeterli?',
+        a: 'Kesinti kısa sürüyorsa küçük bir UPS kombinin kartını ve pompasını bir süre ayakta tutar. Kesinti saatler sürüyorsa UPS yetmez, jeneratör gerekir; ikisini birlikte kurmak en güvenli çözümdür.',
+      },
+      {
+        q: 'Jeneratörün topraklaması gerçekten gerekli mi?',
+        a: 'Gerekli; topraksız çalışan bir jeneratör arıza anında gövdesinde tehlikeli gerilim bırakabilir. Kurulumda topraklamayı binanın topraklamasına bağlayıp ölçümle doğruluyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Kahramankazan Elektrikçi', href: '/hizmet-bolgeleri/kahramankazan' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Kaçak Akım Rölesi hizmeti', href: '/hizmetler/kacak-akim-rolesi' },
+      { label: 'Törekent’te Kışın Elektrikli Isıtıcı Sigorta Attırıyorsa', href: '/rehber/torekent-kisin-elektrikli-isitici-sigorta-atiyor' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
