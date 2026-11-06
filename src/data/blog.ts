@@ -860,6 +860,154 @@ export const posts: BlogPost[] = [
       { label: 'Törekent’te Kışın Elektrikli Isıtıcı Sigorta Attırıyorsa', href: '/rehber/torekent-kisin-elektrikli-isitici-sigorta-atiyor' },
     ],
   },
+  {
+    slug: 'sincan-pano-sigorta-tamiri-kalkmayan-sigorta',
+    title: 'Sincan’da Pano ve Sigorta Tamiri: Kalkmayan Sigorta, Cızırdayan Pano, Karışık Hatlar',
+    description:
+      'Sincan’da sigorta kolu kalkmıyor, panodan cızırtı ya da yanık kokusu geliyor veya hangi sigortanın neyi beslediği belli değilse ne yapmalı? Usta anlatıyor. Mr Volt: 0506 254 76 78.',
+    keyword: 'Sincan sigorta tamiri',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Kolu bir türlü kalkmayan sigorta, panonun içinden gelen cızırtı ve hangi sigortanın hangi odaya ait olduğunu kimsenin bilmemesi. Sincan’da pano açtığımız evlerde en sık karşılaştığımız üç durumu ve ne yaptığımızı anlattık.',
+    intro:
+      'Fatih Mahallesi’nden bir müşterimiz akşam saatinde aradı: salonun sigortası atmış, kolu kaldırıyor, kol elinde geri düşüyor. Üç dört kez denemiş, sonunda kolu parmağıyla yukarıda tutmaya çalışmış. Telefonda ilk söylediğimiz şey "bırakın, zorlamayın" oldu. Kalkmayan bir sigortayı zorla tutmak, o hattaki arızayı kabloya ve panoya taşımak demek. Sincan’da yıllardır pano ve sigorta tamiri yapıyoruz; bu yazıda en sık aldığımız üç çağrıyı ve her birinde gerçekte ne olduğunu usta gözüyle anlatıyoruz.',
+    sections: [
+      {
+        h: 'Sigortanın kolu kalkmıyorsa ne olmuştur?',
+        p: [
+          'Kısa cevap: sigorta kolu kaldırır kaldırmaz geri düşüyorsa, o hatta o anda bir kısa devre ya da ağır bir kaçak vardır ve sigorta görevini yapıyordur. Daha nadir olarak sigortanın kendi mekanizması bozulmuş olabilir. İkisini ayırmanın kolay bir yolu var.',
+          'O sigortanın beslediği odadaki bütün cihazları prizden çekin ve lambaları anahtardan kapatın, sonra kolu bir kez kaldırın. Kalkıyorsa sorun çektiğiniz cihazlardan birindedir. Hâlâ kalkmıyorsa arıza duvarın içindeki hatta ya da sigortanın kendisindedir ve bizim ölçmemiz gerekir. Fatih’teki evde sorun, perdenin arkasında kalan bir uzatma kablosunun ezilip içten kısa devre yapmasıymış; kabloyu atınca sigorta hemen kalktı.',
+        ],
+      },
+      {
+        h: 'Panodan cızırtı veya yanık kokusu geliyorsa',
+        p: [
+          'Kısa cevap: panodan gelen cızırtı, tıkırtı ya da yanık plastik kokusu beklenmemesi gereken bir işarettir. Sebep çoğu zaman bir sigortanın ya da baranın vidasının gevşemesi ve orada küçük kıvılcımlar oluşmasıdır. Ana şalteri indirin ve bekletmeden arayın.',
+          'Pınarbaşı’nda açtığımız bir panoda ocak hattının sigortası, arkasındaki baradan yarım tur gevşemişti. Her yemek pişirildiğinde orada küçük bir ark oluyor, bara ve sigortanın tabanı kararmıştı. Böyle durumlarda sadece vidayı sıkmak yetmez; kararmış bara ve sigorta değişir, yanmış kablo ucu kesilir, sonra bütün panonun vidaları tek tek kontrol edilir. Bir vida gevşediyse yanındakiler de gevşemiş olabilir.',
+        ],
+      },
+      {
+        h: 'Hangi sigorta neyi besliyor, kimse bilmiyor',
+        p: [
+          'Kısa cevap: panodaki sigortaların altında etiket yoksa, bir arıza anında hangi sigortayı indireceğinizi bilemez ve çoğu zaman ana şalteri kapatıp evin tamamını karanlıkta bırakırsınız. Bu küçük bir eksiklik gibi görünür ama arıza anında çok vakit kaybettirir.',
+          'Sincan’ın eski apartmanlarında, özellikle Atatürk ve Plevne taraflarında, yıllar içinde farklı ustaların ekleme yaptığı panolar çok sık çıkıyor; bir sigorta hem mutfağı hem yatak odasının yarısını besliyor olabiliyor. Tamire gittiğimiz her panoda hatları tek tek indirip kaldırarak hangi sigortanın neyi beslediğini buluyor, altına yazıyoruz. Bir hat mantıksız şekilde bölünmüşse bunu da size söylüyoruz.',
+        ],
+      },
+      {
+        h: 'Tamir mi yeter, pano mu yenilenmeli?',
+        p: [
+          'Kısa cevap: tek tük sigorta arızası ve gevşek bağlantılar tamirle çözülür, panonun tamamını değiştirmek gerekmez. Ama panoda kaçak akım rölesi hiç yoksa, sigortalar eski tip ve parçası bulunmayan modellerse ya da bara ve sigortaların çoğunda yanık izi varsa, yenilemek hem daha güvenli hem uzun vadede daha ucuzdur.',
+          'Bu kararı biz vermiyoruz, size gösteriyoruz. Panoyu açtığımızda ne gördüğümüzü, neyin tamirle kurtulacağını, neyin değişmesi gerektiğini anlatıyor ve iki seçeneğin fiyatını ayrı ayrı söylüyoruz. Gereksiz pano satmayı sevmeyiz, ama yanmış bir panoyu da "idare eder" diye kapatmayız.',
+        ],
+      },
+      {
+        h: 'Sincan’da pano tamirine nasıl geliyoruz?',
+        p: [
+          'Telefonda önce hangi sigortanın attığını, kolun kalkıp kalkmadığını ve panoda koku ya da kararma olup olmadığını soruyoruz; bazen arızayı telefonda birlikte çözüyoruz ve gelmemize gerek kalmıyor. Gelmemiz gerekiyorsa aracımızda farklı amperlerde sigorta, kaçak akım rölesi ve bara bulunuyor; çoğu tamiri ilk gelişte bitiriyoruz.',
+          'Mr Volt olarak Sincan merkezine, Fatih, Pınarbaşı, Plevne ve Törekent’e aynı gün çıkıyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz; önce ölçüp keşif sonrası net fiyatı söyleriz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Sincan’da sigorta tamirine aynı gün geliyor musunuz?',
+        a: 'Evet. Haftanın 7 günü 08:00–23:00 arası çalışıyoruz; sigorta ve pano arızalarına çoğu zaman aynı gün geliyoruz.',
+      },
+      {
+        q: 'Sigortanın kolu kalkmıyor, zorla tutabilir miyim?',
+        a: 'Tutmayın. Kol kalkmıyorsa hatta kısa devre ya da ağır bir kaçak vardır. O hattaki cihazları prizden çekip bir kez deneyin, yine kalkmıyorsa bizi arayın.',
+      },
+      {
+        q: 'Panodan yanık kokusu geliyor, sabaha bekleyebilir miyim?',
+        a: 'Beklemeyin. Ana şalteri indirip hemen arayın. Gevşek bir bağlantı ısınmaya devam eder ve yangına dönüşebilir.',
+      },
+      {
+        q: 'Pano yenilemek mi, tamir mi daha mantıklı?',
+        a: 'Panoyu açtığımızda ikisini de size gösterip fiyatlarını ayrı söylüyoruz. Çoğu zaman tamir yeter; kaçak akım rölesi yoksa ya da bara ve sigortalar yanmışsa yenilemeyi öneriyoruz.',
+      },
+    ],
+    related: [
+      { label: 'Sincan Elektrikçi', href: '/hizmet-bolgeleri/sincan' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: 'Törekent’te Kışın Elektrikli Isıtıcı Sigorta Attırıyorsa', href: '/rehber/torekent-kisin-elektrikli-isitici-sigorta-atiyor' },
+    ],
+  },
+  {
+    slug: 'yenikent-kacak-akim-rolesi-montaji-eski-daire',
+    title: 'Yenikent’te Kaçak Akım Rölesi Montajı: Rölesiz Eski Daire, Tip A Röle ve Hat Ayırma',
+    description:
+      'Yenikent’te panosunda kaçak akım rölesi olmayan eski dairelere röle montajı. Tek röle mi iki röle mi, AC tipi mi A tipi mi, takınca neden atar? Usta anlatıyor. Mr Volt: 0506 254 76 78.',
+    keyword: 'Yenikent kaçak akım rölesi montajı',
+    date: '2026-11-06',
+    readingMin: 6,
+    excerpt:
+      'Yenikent’teki eski dairelerin bir kısmında panoda hâlâ kaçak akım rölesi yok. Sonradan röle taktırmak isteyenlere hangi röleyi, kaç tane ve nereye taktığımızı sahadan anlattık.',
+    intro:
+      'Menderes Mahallesi’nde yeni taşınan genç bir çift aradı. Bebekleri olacakmış, evi baştan kontrol ettirmek istiyorlar. Panoyu açtık: dört otomat sigorta, bir ana şalter, kaçak akım rölesi yok. Daire doksanların sonunda yapılmış, o günden beri panoya kimse dokunmamış. Yenikent’te bu tabloyla hâlâ sık karşılaşıyoruz. Kaçak akım rölesi bir evde olabilecek en ucuz ve en önemli koruma; bu yazıda rölesiz bir daireye sonradan röle takarken nelere dikkat ettiğimizi anlatıyoruz.',
+    sections: [
+      {
+        h: 'Panoda test butonlu şalter yoksa eviniz korumasız mı?',
+        p: [
+          'Kısa cevap: sigortalar evinizi aşırı yüke ve kısa devreye karşı korur, ama çarpılmaya karşı korumaz. Kaçak akım rölesi, panoda üzerinde "T" ya da "Test" yazan bir butonu olan şalterdir. Panonuzda bu yoksa, ıslak elle bozuk bir prize dokunduğunuzda sizi kesecek hiçbir şey yok demektir.',
+          'Panonuza bakıp emin olamıyorsanız bize fotoğrafını gönderin, rölenin olup olmadığını hemen söyleriz. Yenikent’in 29 Ekim ve Fevzi Çakmak taraflarındaki eski dairelerde röle hiç olmayan panolar da var, sonradan takılmış ama 300 mA olduğu için insanı korumayan röleler de.',
+        ],
+      },
+      {
+        h: 'Tek röle mi, iki röle mi?',
+        p: [
+          'Kısa cevap: küçük bir dairede bütün evi tek bir 30 mA röle korur ve bu yeterlidir. Ama tek rölede banyodaki küçük bir kaçak bile evin tamamını karanlıkta bırakır. Bu yüzden imkân varsa ıslak hacimleri (banyo, mutfak, çamaşır makinesi) bir röleye, odaları ve aydınlatmayı başka bir röleye almayı öneriyoruz.',
+          'Menderes’teki evde panoda yer vardı, iki röle taktık: biri banyo, mutfak ve çamaşır makinesi hattına, diğeri oda prizleri ile aydınlatmaya. Gece banyoda bir kaçak olursa sadece o bölüm düşüyor; koridorun ve odaların ışığı yanmaya devam ediyor. Bebekli bir evde gece karanlıkta kalmamak küçük bir konfor değil.',
+        ],
+      },
+      {
+        h: 'AC tipi mi, A tipi mi?',
+        p: [
+          'Kısa cevap: piyasadaki en yaygın ve ucuz röle AC tipidir. Ama bugün evlerde inverterli klima, çamaşır ve bulaşık makinesi, indüksiyon ocak gibi elektronik devreli cihazlar var; bunların kaçak akımı her zaman AC tipinin tam algılayacağı şekilde olmayabilir. Bu cihazların bulunduğu hatlarda A tipi röle daha güvenlidir.',
+          'A tipi röle biraz daha pahalıdır ama fark büyük değildir. Montajda hangi hatta hangi cihazların olduğuna bakıp öneriyoruz. Yalnızca aydınlatma ve sıradan prizlerin olduğu bir hatta AC tipi yeterli olabilir; çamaşır makinesi ve klimanın olduğu hatta A tipini tercih ediyoruz.',
+        ],
+      },
+      {
+        h: 'Röle takılınca hemen atıyorsa',
+        p: [
+          'Kısa cevap: yıllarca rölesiz çalışmış bir evde röle takıldığı gün atıyorsa, çoğu zaman röle bozuk değildir; evde zaten var olan ama o güne kadar kimsenin fark etmediği bir kaçağı ilk kez yakalamıştır. Bunu bir arıza değil, rölenin işini yapması olarak görmek gerekir.',
+          'Bu yüzden röleyi takmadan önce hatları megerle ölçüyoruz. Bir hatta kaçak çıkarsa önce onu buluyoruz; çoğu zaman nemli bir banyo prizi, eski bir şofben bağlantısı ya da balkona çıkan bir lamba hattı oluyor. Panoda nötrler karışık bağlanmışsa onları da hat hat ayırıyoruz. Röle ancak hatlar temizken düzgün çalışır, takıp giderseniz ertesi gün "röle sürekli atıyor" diye geri çağrılırsınız.',
+        ],
+      },
+      {
+        h: 'Yenikent’te kaçak akım rölesi montajına nasıl geliyoruz?',
+        p: [
+          'Telefonda panonuzun fotoğrafını ister ya da birkaç soruyla durumu anlarız. Aracımızda 30 mA AC ve A tipi röleler bulunur; hat ölçümü, montaj ve test çoğu zaman tek gelişte biter. Montajdan sonra test butonuna basarak rölenin attığını size gösteriyor, ayda bir kez sizin de basmanızı rica ediyoruz.',
+          'Mr Volt olarak Menderes, 29 Ekim, Fevzi Çakmak ve Ahi Evran başta olmak üzere Yenikent’in tamamına aynı gün çıkıyoruz. Haftanın 7 günü 08:00–23:00 arası 0506 254 76 78’den ulaşabilirsiniz; fiyatı yerinde ölçtükten sonra net söyleriz.',
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: 'Yenikent’te kaçak akım rölesi montajı ne kadar sürer?',
+        a: 'Hatlar temizse ölçüm, montaj ve test yaklaşık bir saat sürer. Bir hatta kaçak çıkarsa onu bulmak için biraz daha zaman gerekir.',
+      },
+      {
+        q: 'Eski panoma kaçak akım rölesi eklenebilir mi?',
+        a: 'Çoğu panoya eklenir. Panoda yer yoksa ya da pano çok eskiyse rölenin sığacağı küçük bir ek kutu ya da pano yenileme öneriyoruz.',
+      },
+      {
+        q: 'AC tipi röle yeterli mi?',
+        a: 'Aydınlatma ve sıradan prizler için çoğu zaman yeterli. İnverterli klima, çamaşır makinesi ve indüksiyon ocak gibi cihazların hattında A tipi röleyi öneriyoruz.',
+      },
+      {
+        q: 'Röleyi taktırdım, ertesi gün atmaya başladı, neden?',
+        a: 'Büyük ihtimalle evde daha önce fark edilmemiş bir kaçak vardı ve röle onu yakaladı. Hatları ölçüp kaçağın yerini buluyoruz, röleyi değiştirmek gerekmez.',
+      },
+    ],
+    related: [
+      { label: 'Yenikent Elektrikçi', href: '/hizmet-bolgeleri/yenikent' },
+      { label: 'Kaçak Akım Rölesi hizmeti', href: '/hizmetler/kacak-akim-rolesi' },
+      { label: 'Sigorta ve Pano İşleri', href: '/hizmetler/sigorta-pano' },
+      { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
