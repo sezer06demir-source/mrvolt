@@ -1008,6 +1008,68 @@ export const posts: BlogPost[] = [
       { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
     ],
   },
+  {
+    slug: 'aksam-pazar-gunu-elektrikci-nasil-bulunur',
+    title: 'Akşam Saatinde ya da Pazar Günü Elektrikçi Nasıl Bulunur, Ne Sorulur?',
+    description:
+      "Akşam ya da pazar günü elektrik arızası patlak verince kimi aramalı, telefonda ne sorulmalı? Hangi arıza beklemez, hangisi sabaha bırakılır. Mr Volt: 0506 254 76 78.",
+    keyword: 'akşam elektrikçi Ankara',
+    date: '2026-11-13',
+    readingMin: 5,
+    excerpt:
+      'Arızalar nedense hep akşam yemeği saatinde ya da pazar günü patlıyor. Telefonu açtığınızda doğru soruları sorarsanız, gelen ekip kapıdan içeri girmeden önce yarı yarıya ne olduğunu biliyor olur.',
+    intro:
+      "Yirmi sekiz yıldır bu telefonlara cevap veriyoruz ve bir şey hiç değişmedi: elektrik arızası mesai saatinde değil, akşam yemeği hazırlanırken ya da pazar öğleden sonra ortaya çıkar. Herkes evde, fırın açık, çamaşır makinesi dönüyor, biri de ışığı yakmaya çalışıyor; tam o an bir şey gider. Telefonu elinize aldığınızda panikle değil, birkaç soruyla aramaya başlarsanız hem kendiniz rahatlarsınız hem de gelen ekip ne taşıyacağını bilerek yola çıkar.",
+    sections: [
+      {
+        h: 'Arızalar neden akşam ve hafta sonu daha çok patlıyor?',
+        p: [
+          'Bunun büyülü bir tarafı yok, sadece yük meselesi. Gündüz evde kimse yokken sadece buzdolabı çalışır; akşam olunca fırın, çamaşır makinesi, televizyon, şarj aletleri, ısıtıcı hepsi aynı anda devreye girer. Zaten sınırda çalışan bir hat ya da yıllardır gevşek duran bir bağlantı, bu ek yükü gördüğü an pes eder.',
+          'Pazar günü de benzer bir sebepten yoğun geçiyor: insanlar evde, temizlik yapılıyor, yemek pişiyor, çocuklar televizyon ya da oyun konsolu açıyor. Hafta içi fark edilmeyen bir ısınma ya da sık atan sigorta, herkesin evde olduğu günlerde daha belirgin hale geliyor.',
+        ],
+      },
+      {
+        h: 'Telefonda sorduğumuz sorular boşuna değil',
+        p: [
+          'Aradığınızda "elektrik gitti" demek bize çok şey söylemiyor; ama şu sorulara cevap verirseniz işimiz kolaylaşıyor: Evin hepsi mi yoksa bir odası mı etkilendi? Panodaki sigorta ya da kaçak akım rölesi düşmüş mü, yoksa hepsi kalkık dururken elektrik yine yok mu? Bir koku, kıvılcım ya da çıtırtı var mıydı? Bu üç sorunun cevabı, geleceğimiz ekibin yanına doğru yedek parçayı almasını sağlıyor.',
+          'Örneğin geçen ay bir apartmandan gelen çağrıda "sigorta attı, kaldırınca anında yine atıyor" dediler. Bu tek cümle bize kaçak ya da kısa devre ihtimalini düşündürdü; pens ampermetreyi ve yedek sigortaları alıp öyle çıktık, iş tek gelişte bitti.',
+        ],
+      },
+      {
+        h: 'Hangi arıza beklemez, hangisi sabaha bırakılabilir?',
+        p: [
+          'Bir prizden kıvılcım çıkması, yanık kokusu, panoda duman ya da ısrarla atan bir sigorta bekleyecek şeyler değildir; o hattın sigortasını indirin ve hemen arayın. Aynı şekilde cihaza dokununca hafif çarpma hissi de ciddiye alınmalı, bu genelde kaçak akım ya da topraklama sorununun habercisidir.',
+          'Buna karşılık tek bir lambanın yanmaması, bir odanın prizinin çalışmaması gibi durumlar genelde o gece elektriksiz uyumak zorunda bırakmaz; sigortayı kontrol edip gerekirse ertesi güne de bırakılabilir. Biz telefonda bu ayrımı birlikte yapıyoruz; aciliyeti siz değil, belirtiler belirliyor.',
+        ],
+      },
+      {
+        h: 'Pazar ya da akşam arayınca gerçekten geliniyor mu?',
+        p: [
+          'Bu konuda dürüst olmak gerekir: her firma her saatte gelmiyor, bazıları sadece "arayın bakalım" diyip sabaha havale ediyor. Biz haftanın yedi günü, sabah 08:00 ile akşam 23:00 arası telefona bakıyoruz; bu saatlerin dışında kalan gerçekten acil bir durum varsa da bunu telefonda konuşup değerlendiriyoruz.',
+          'Arama saatinize göre net bir şey söylemek daha doğru: akşam erken saatte arayan çoğu zaman aynı gün, gece yarısına yakın arayan ise ertesi sabah ilk iş olarak kapıda buluyor bizi. Beklenti baştan netleşince kimse boşuna oturup beklemiyor.',
+        ],
+      },
+      {
+        h: 'Ekip gelene kadar siz ne yapabilirsiniz?',
+        p: [
+          'Panoyu bulup sigortaların ve kaçak akım rölesinin (üstünde "T" ya da "Test" yazan şalter) durumuna bakmak işe yarar; röle düşmüşse bir kere kaldırmayı deneyebilirsiniz, hemen tekrar düşüyorsa zorlamayın. Kıvılcım ya da koku varsa o hattın sigortasını indirip dokunmayın, ıslak elle hiçbir prize ya da anahtara yaklaşmayın.',
+          'Isıtıcı, soba gibi yüksek güçlü cihazları ayrı prizlere dağıtmak bazen tek başına sorunu geçici olarak hafifletir. Ama bu bir çözüm değil, sadece ekip gelene kadar evin daha güvenli durmasını sağlayan bir ara adımdır.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Pazar günü aradığımda gerçekten geliyor musunuz?', a: 'Evet, haftanın 7 günü 08:00–23:00 arası çağrı alıyoruz. Arızayı kısaca anlatırsanız o anki konumumuza göre ne zaman ulaşabileceğimizi net söylüyoruz.' },
+      { q: 'Akşam saat kaçına kadar arayabilirim?', a: '23:00’e kadar telefon açık. Bu saatten sonra gerçekten bekleyemeyecek bir durum varsa onu da telefonda konuşup değerlendiriyoruz.' },
+      { q: 'Telefonda arızayı tam çözebiliyor musunuz?', a: 'Bazı küçük arızaları (yanlış takılmış sigorta, basit bir bağlantı) telefonda yönlendirerek çözebiliyoruz. Ama kaçak, kısa devre ya da ısınma şüphesinde yerinde ölçüm gerekir.' },
+      { q: 'Akşam ya da pazar gelen ekip fazladan ücret mi alıyor?', a: 'Saatine göre değişen bir ek ücret uygulamıyoruz; yapılacak işi ve ücretini yerinde gördükten sonra net söylüyoruz, onayınız olmadan işe başlamıyoruz.' },
+    ],
+    related: [
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: 'Hizmet Bölgeleri', href: '/hizmet-bolgeleri' },
+      { label: 'Sigorta Neden Atar? Sık Atan Sigortada Ne Yapmalı?', href: '/rehber/sigorta-neden-atar-ne-yapmali' },
+      { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
