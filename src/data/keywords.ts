@@ -25,4 +25,5 @@ export const keywords: Keyword[] = [
   { term: 'Mamak elektrikçi', target: '/hizmet-bolgeleri/mamak', coveredBy: ['serit-led-spot-aydinlatma-mamak'] },
   { term: 'Kahramankazan elektrikçi', target: '/hizmet-bolgeleri/kahramankazan', coveredBy: ['kahramankazan-jenerator-ups-kis-kesintisi'] },
   { term: 'akşam elektrikçi Ankara', target: '/hizmetler/elektrik-ariza-tespiti', coveredBy: ['aksam-pazar-gunu-elektrikci-nasil-bulunur'] },
+  { term: 'Pursaklar elektrikçi', target: '/hizmet-bolgeleri/pursaklar', coveredBy: ['pursaklar-eski-ev-topraklama-yok'] },
 ];

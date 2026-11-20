@@ -1070,6 +1070,68 @@ export const posts: BlogPost[] = [
       { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
     ],
   },
+  {
+    slug: 'pursaklar-eski-ev-topraklama-yok',
+    title: "Pursaklar'da Eski Evlerde Topraklama Yok: Nasıl Anlarım, Ne Risk Taşır?",
+    description:
+      "Pursaklar'daki eski müstakil ve apartman dairelerinde topraklama hattı çoğu zaman hiç çekilmemiş. Bunu nasıl anlarsınız, hangi cihazlar risklidir, çözüm ne. Mr Volt: 0506 254 76 78.",
+    keyword: 'Pursaklar elektrikçi',
+    date: '2026-11-20',
+    readingMin: 6,
+    excerpt:
+      "Pursaklar Merkez ve çevresindeki 90'lı yıl yapımı evlerin çoğunda priz üç delikli görünür ama üçüncü delik hiçbir yere bağlı değildir. Topraklama yoksa kaçak akım rölesi de tek başına yeterli koruma sağlamaz.",
+    intro:
+      "Pursaklar'da özellikle Merkez ve Altınova tarafındaki eski müstakil evlerde ve ilk yapılan apartmanlarda bir şeyi sık görüyoruz: priz üç delikli, görünüşte modern, ama o üçüncü delik hiçbir yere gitmiyor. Ev sahibi bunu yıllarca fark etmiyor, çünkü cihazlar çalışıyor, ışık yanıyor, görünürde bir sorun yok. Topraklamanın eksikliği kendini genelde cihaz arızalandığında ya da birinin eline hafif bir çarpma hissettiğinde gösteriyor; o ana kadar sessiz kalan bir risk.",
+    sections: [
+      {
+        h: "Pursaklar'da topraklama neden bu kadar sık eksik?",
+        p: [
+          "Bölgenin eski yapı stokunun büyük kısmı topraklamanın zorunlu standart haline gelmesinden önce çekilmiş. O dönemde elektrik tesisatı sadece faz ve nötr üzerine kuruluydu, üçüncü bir koruma hattı projelere girmemişti. Sonradan priz değiştirilirken üç delikli modeller takılmış ama arkasındaki topraklama kablosu hiç döşenmemiş, sadece görüntü değişmiş.",
+          "Saray ve Karacakaya taraflarında baktığımız bazı evlerde pano tamamen yenilenmiş, modern bir kaçak akım rölesi de takılmış; ama röle bir yere bağlı olmayan toprak hattına güvenemediği için koruması beklenenin altında kalıyor. Panonun yeni olması topraklamanın da yapıldığı anlamına gelmiyor, bunlar birbirinden bağımsız iki iş.",
+        ],
+      },
+      {
+        h: "Evimde topraklama var mı, nasıl anlarım?",
+        p: [
+          "En basit kontrol, bir priz test cihazıyla (avize test kalemi değil, üç ışıklı priz test ünitesi) prize takıp ışıkların hangi kombinasyonda yandığına bakmaktır; topraklama hattı yoksa cihaz bunu net gösterir. Biz yerinde ölçümde ayrıca toprak direncini de ölçüyoruz, çünkü kablo çekilmiş olması yetmez, değerin de uygun aralıkta olması gerekir.",
+          "Kendi başına fark edebileceğiniz bir işaret de şu: çamaşır makinesi, bulaşık makinesi gibi metal gövdeli cihazlara dokununca hafif bir karıncalanma ya da ürperti hissetmeniz. Bu, kaçan akımın gövdeye yürüyüp bir çıkış yolu aradığının işaretidir ve topraklama olsa bu akım sizi değil, toprağı bulurdu.",
+        ],
+      },
+      {
+        h: "Topraklama olmadan hangi cihazlar gerçekten risk taşır?",
+        p: [
+          "Metal gövdeli ve yüksek güç çeken her cihaz risk listesinin başında gelir: çamaşır makinesi, bulaşık makinesi, elektrikli fırın, şofben ve kombi. Bu cihazların içinde bir izolasyon zayıflaması olduğunda, kaçan akımın gideceği güvenli bir yol yoksa o akım gövde üzerinden dokunan kişiye geçebilir.",
+          "Pursaklar Merkez'de geçen ay baktığımız bir evde şofbenin gövdesi hafif elektriklenmiş, aile bunu aylarca 'statik elektrik' zannetmiş. Ölçtüğümüzde toprak hattının hiç çekilmemiş olduğunu, kaçak akımın gövdede birikip ara sıra boşaldığını gördük; topraklama hattını çekip şofbeni ona bağlayınca sorun tamamen bitti.",
+        ],
+      },
+      {
+        h: "Kaçak akım rölesi varsa topraklamaya hâlâ gerek var mı?",
+        p: [
+          "Kısa cevap evet. Röle, giden ve dönen akım arasındaki dengesizliği yakalayıp hattı kesen bir korumadır ve topraklama olmasa da bir dereceye kadar çalışır; ama asıl görevi kaçan akımı güvenli şekilde toprağa yönlendirmektir. Topraklama yoksa röle bazen gecikir, bazen de kaçağı tam yakalayamaz çünkü akımın gidebileceği düzgün bir yol tanımlı değildir.",
+          "İkisi birlikte çalıştığında koruma tam olur: topraklama kaçan akımı güvenli yola yönlendirir, röle de o kaçağı anında fark edip hattı keser. Birini yapıp diğerini atlamak, evde yarım bir güvenlik bırakmak demektir.",
+        ],
+      },
+      {
+        h: "Topraklama hattı çekmek ne kadar iş, daire boşaltılır mı?",
+        p: [
+          "Müstakil evde genelde bahçeye ya da uygun bir noktaya bir toprak elektrotu çakıp ana panoya kadar 16 mm² yeşil-sarı kabloyla bu hattı çekiyoruz; iş genelde bir gün içinde bitiyor. Apartman dairesinde ise bina kolon hattında ortak topraklama varsa daireye o hattan bağlantı almak çoğu zaman yeterli oluyor, ayrıca elektrot çakmaya gerek kalmıyor.",
+          "Dairenin tamamen boşaltılması gerekmiyor; priz ve anahtar kapaklarını tek tek açıp hattı döşüyor, iş bitince yerine kapatıyoruz. Toz ve gürültü açısından kısa süren, günlük yaşamı çok bölmeyen bir çalışma.",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Pursaklar'da eski evlerin çoğunda topraklama yok mu?", a: "Bölgenin eski yapı stokunda bu çok sık görülüyor; priz üç delikli olsa da arkasındaki toprak hattı çoğu zaman hiç çekilmemiş. Yerinde ölçüm yapmadan evinizde olup olmadığını kesin söylemek doğru olmaz." },
+      { q: "Topraklama olmadan kaçak akım rölesi işe yaramaz mı?", a: "Tamamen işe yaramaz demek doğru değil ama koruması eksik kalır. Röle kaçağı yakalar, topraklama ise o kaçan akımı güvenli şekilde yönlendirir; ikisi birlikte tam koruma sağlar." },
+      { q: "Topraklama yok diye cihazlarım bozulur mu?", a: "Doğrudan cihazı bozmaz ama bir arıza anında gövdeye kaçan akımın gidecek güvenli bir yolu olmadığı için hem cihaz hem de dokunan kişi için risk oluşur." },
+      { q: "Apartman dairesinde topraklama çekmek büyük bir iş mi?", a: "Bina kolon hattında ortak topraklama varsa daireye bağlantı almak genelde bir gün içinde biten, dairenin boşaltılmasını gerektirmeyen bir iştir." },
+    ],
+    related: [
+      { label: 'Pursaklar Elektrikçi', href: '/hizmet-bolgeleri/pursaklar' },
+      { label: 'Elektrik Tesisatı İşleri', href: '/hizmetler/elektrik-tesisati' },
+      { label: 'Kaçak Akım Rölesi hizmeti', href: '/hizmetler/kacak-akim-rolesi' },
+      { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
