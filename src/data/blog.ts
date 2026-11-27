@@ -1132,6 +1132,68 @@ export const posts: BlogPost[] = [
       { label: 'Kaçak Akım Rölesi Neden Atar?', href: '/rehber/kacak-akim-rolesi-neden-atar' },
     ],
   },
+  {
+    slug: 'golbasi-eski-tesisat-yenileme',
+    title: "Gölbaşı'da Eski Evlerde Elektrik Tesisatı: Tam Yenileme mi, Kısmi Onarım mı?",
+    description:
+      "Gölbaşı'nın eski müstakil evlerinde tesisat ne zaman tamamen değişmeli, ne zaman kısmi onarım yeter? Karagedik, Oğulbey ve İncek'ten sahadan örneklerle. Mr Volt: 0506 254 76 78.",
+    keyword: 'Gölbaşı elektrikçi',
+    date: '2026-11-27',
+    readingMin: 6,
+    excerpt:
+      "Gölbaşı'nda özellikle Karagedik ve Oğulbey tarafındaki eski müstakil evlerde tesisatın ne zaman tamamen yenilenmesi, ne zaman sadece sorunlu kısmın onarılması gerektiğini sahadan örneklerle anlatıyoruz.",
+    intro:
+      "Gölbaşı'nda baktığımız evlerin önemli bir kısmı iki uçta toplanıyor: bir yanda İncek tarafının yeni villaları, bir yanda Karagedik ve Oğulbey gibi eski köy dokusundan gelen müstakil evler. İkisinin tesisat ömrü ve sorunları birbirinden çok farklı oluyor. Müşteri çoğu zaman bize “tesisatı baştan mı yapalım, yoksa sorunlu yeri mi düzeltelim” diye soruyor; doğru cevap, evin yaşına, kablo cinsine ve daha önce kaç kez elden geçtiğine bakmadan verilemez.",
+    sections: [
+      {
+        h: "Tesisatı tamamen değiştirmek mi gerekir, kısmi onarım mı yeter?",
+        p: [
+          "Kısa cevap: tesisatın büyük kısmı tek bir dönemde çekilmişse ve o dönemden beri hiç elden geçmemişse, tek bir noktayı onarmak genelde kalıcı çözüm olmuyor. Bir hatta sorun çıkaran yalıtım yorgunluğu, genelde aynı dönemde döşenmiş diğer hatlarda da vardır; sadece henüz belirti vermemiştir.",
+          "Buna karşılık tesisat zaten birkaç kez elden geçmiş, kablo kesitleri güncel standartlara yakınsa ve sorun tek bir noktada (mesela nemden etkilenmiş bir priz hattında) toplanıyorsa, o bölgeyi açıp onarmak yeterli olur. Her evi aynı kalıba koymuyoruz, önce panoyu ve birkaç örnek hattı açıp durumu görüyoruz.",
+        ],
+      },
+      {
+        h: "Tesisatın ömrünü doldurduğunu gösteren belirtiler nelerdir?",
+        p: [
+          "En net belirti, sigortanın ya da kaçak akım rölesinin belirli bir hatta tekrar tekrar atmasıdır; özellikle hava nemliyken ya da birden fazla cihaz aynı hatta çalışırken. İkinci belirti, priz ve anahtar kapaklarının ısınması ya da hafif kararmasıdır; bu, içeride gevşemiş bir bağlantı veya aşırı yük anlamına gelir.",
+          "Üçüncü belirti ise eski tesisatlarda çok sık rastladığımız alüminyum iletkenli kablolardır. Alüminyum zamanla oksitlenip bağlantı noktalarında direnç artışına yol açar; bu da ısınma ve en kötü ihtimalle yangın riski demektir. Panoyu açtığımızda alüminyum kablo görürsek, o hattı öncelik listesine alıyoruz.",
+        ],
+      },
+      {
+        h: "Karagedik ve Oğulbey'in eski müstakil evlerinde en sık ne görüyoruz?",
+        p: [
+          "Bu taraflarda ev genelde yıllar içinde iki üç kez büyütülmüş oluyor; her ek odaya tesisat, var olan hatta bir yerden bağlanarak uzatılmış. Sonuç olarak bir hat üzerinde beklenenden çok daha fazla priz ve cihaz birikmiş oluyor, kablo kesiti ise hâlâ ilk döşendiği günkü ince kesit.",
+          "Geçen ay Oğulbey'de baktığımız bir evde mutfak, çamaşır odası ve dışarıdaki su pompası aynı 1,5 mm² hatta bağlıydı; pompa çalışırken mutfakta ışıklar kısılıyordu. Hattı 2,5 mm² ile yeniden çekip pompayı ayrı bir hatta aldığımızda sorun bitti; burada kısmi yenileme yeterli oldu çünkü diğer hatlar sağlamdı.",
+        ],
+      },
+      {
+        h: "İncek'teki yeni villalarda tesisat neden daha az sorun çıkarır?",
+        p: [
+          "İncek tarafındaki villalar genelde güncel standartlara göre projelendirilmiş; kablo kesitleri doğru, pano ayrı devrelere bölünmüş ve topraklama baştan düşünülmüş oluyor. Buradaki çağrılarımız daha çok akıllı ev sistemleri, otomasyon panoları ya da parafudr gibi ek koruma taleplerine yönelik oluyor, tesisatın kendisine değil.",
+          "Yine de yeni bir tesisatın sorunsuz kalması, hiç kontrol edilmeyeceği anlamına gelmiyor. Özellikle ani gerilim dalgalanmalarına karşı panoya parafudr konup konmadığını, birkaç yılda bir mutlaka kontrol etmesini öneriyoruz.",
+        ],
+      },
+      {
+        h: "Tam yenileme sırasında ev ne kadar karışır, ne kadar sürer?",
+        p: [
+          "Müstakil bir evde tam tesisat yenileme, oda sayısına göre değişmekle birlikte genelde birkaç güne yayılan bir iş. Duvarlarda kanal açılması gerektiği için sıva ve boya tazelemesi kaçınılmaz oluyor; biz işe başlamadan önce hangi duvarların açılacağını müşteriyle birlikte işaretliyoruz ki sürpriz olmasın.",
+          "Kısmi onarımda ise durum çok daha az rahatsız edici; sorunlu hattı taşıyan duvar veya tavan bölümü açılır, kablo değişir, kapatılır. Taşpınar ve Hacılar taraflarında yaptığımız kısmi onarımların çoğu bir gün içinde, evin geri kalanı hiç etkilenmeden bitiyor.",
+        ],
+      },
+    ],
+    faq: [
+      { q: "Gölbaşı'da eski bir evde tesisat ne zaman tamamen değişmeli?", a: "Tesisatın büyük kısmı tek dönemde çekilmiş ve hiç elden geçmemişse, tek noktayı onarmak kalıcı çözüm olmaz; o durumda tam yenileme daha doğrudur. Panoyu ve birkaç örnek hattı açıp karar veriyoruz." },
+      { q: "Sigorta sık atıyor, bu tesisatın yenilenmesi gerektiği anlamına mı gelir?", a: "Her zaman değil. Bazen tek bir hattın aşırı yüklenmesi ya da nemlenmiş bir noktadır; sebebi ölçmeden tüm tesisatı değiştirmeye gerek olmayabilir." },
+      { q: "Tesisat yenileme sırasında duvarlar kırılır mı?", a: "Kablo kanalı duvar veya tavan içinden geçtiği için evet, ilgili bölümler açılır ve iş bitince kapatılır. Hangi duvarların açılacağını işe başlamadan önce birlikte belirliyoruz." },
+      { q: "Villa tesisatı ile eski müstakil ev tesisatı aynı mı değerlendirilir?", a: "Hayır. Yeni villalarda kesitler ve pano dağılımı genelde doğru kurulmuş olur, kontrol ve ek koruma öne çıkar; eski müstakil evlerde ise kesit yetersizliği ve alüminyum kablo gibi köklü sorunlar daha sık görülür." },
+    ],
+    related: [
+      { label: 'Gölbaşı Elektrikçi', href: '/hizmet-bolgeleri/golbasi' },
+      { label: 'Elektrik Tesisatı İşleri', href: '/hizmetler/elektrik-tesisati' },
+      { label: 'Elektrik Arıza Tespiti', href: '/hizmetler/elektrik-ariza-tespiti' },
+      { label: "Pursaklar'da Eski Evlerde Topraklama Yok", href: '/rehber/pursaklar-eski-ev-topraklama-yok' },
+    ],
+  },
 ];
 
 export function getPost(slug: string): BlogPost | undefined {
